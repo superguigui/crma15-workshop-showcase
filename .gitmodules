@@ -1,0 +1,3 @@
+[submodule "repos/clement-bardon"]
+	path = repos/clement-bardon
+	url = https://github.com/clmntclmnt/threejs-gblns
