@@ -14,102 +14,102 @@ module.exports = extend(true, {}, section, {
         projects: [
             {
                 id: '0',
-                author: 'John Lennon',
+                author: 'Clément Bardon',
                 title: 'Awefully long title'
             },
             {
                 id: '1',
-                author: 'Georges Harrisson',
+                author: 'Nicolas Bonnot',
                 title: 'Title'
             },
             {
                 id: '2',
-                author: 'Paul Macartney',
+                author: 'Kevin Budain',
                 title: 'Title'
             },
             {
                 id: '3',
-                author: 'Ringo Star',
+                author: 'Bertrand Cayla',
                 title: 'Title'
             },
             {
                 id: '1',
-                author: 'Georges Harrisson',
+                author: 'Etienne Chaumont',
                 title: 'Title'
             },
             {
                 id: '2',
-                author: 'Paul Macartney',
+                author: 'Jordan Delcros',
                 title: 'Title'
             },
             {
                 id: '3',
-                author: 'Ringo Star',
+                author: 'Jérémie Devoos',
                 title: 'Title'
             },
             {
                 id: '1',
-                author: 'Georges Harrisson',
+                author: 'Léonard Hetsch',
                 title: 'Title'
             },
             {
                 id: '2',
-                author: 'Paul Macartney',
+                author: 'Samuel Honigstein',
                 title: 'Title'
             },
             {
                 id: '3',
-                author: 'Ringo Star',
+                author: 'Lory Huz',
                 title: 'Title'
             },
             {
                 id: '1',
-                author: 'Georges Harrisson',
+                author: 'Guillaume Jasmin',
                 title: 'Title'
             },
             {
                 id: '2',
-                author: 'Paul Macartney',
+                author: 'Thomas Josseau',
                 title: 'Title'
             },
             {
                 id: '3',
-                author: 'Ringo Star',
+                author: 'Antonin Langlade',
                 title: 'Title'
             },
             {
                 id: '1',
-                author: 'Georges Harrisson',
+                author: 'Katia Moreira',
                 title: 'Title'
             },
             {
                 id: '2',
-                author: 'Paul Macartney',
+                author: 'Louise Obé',
                 title: 'Title'
             },
             {
                 id: '3',
-                author: 'Ringo Star',
+                author: 'Jean-Baptiste Penrath',
                 title: 'Title'
             },
             {
                 id: '1',
-                author: 'Georges Harrisson',
+                author: 'Sylvain Reucherand',
                 title: 'Title'
             },
             {
                 id: '2',
-                author: 'Paul Macartney',
+                author: 'Glenn Sonna',
                 title: 'Title'
             },
             {
                 id: '3',
-                author: 'Ringo Star',
+                author: 'Alexis Tessier',
                 title: 'Title'
             },
             {
                 id: '3',
-                author: 'Ringo Star',
+                author: 'Geoffrey Thenot',
                 title: 'Title'
             }
         ]
