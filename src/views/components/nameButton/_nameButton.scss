@@ -1,7 +1,7 @@
 .name-button {
     display: block;
-    line-height: 50px;
-    height: 50px;
+    line-height: 80px;
+    height: 80px;
     position: relative;
 
     .name, .title {
@@ -9,7 +9,12 @@
         color: #333;
     }
 
+    .name {
+        @extend %font-regular;
+    }
+
     .title {
+        @extend %font-light;
         padding-left: 10px;
         opacity: 0;
         color: #FFF;

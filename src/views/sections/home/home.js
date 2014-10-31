@@ -124,7 +124,7 @@ module.exports = extend(true, {}, section, {
     },
     
     ready: function() {
-        
+
     },
 
     beforeDestroy: function() {

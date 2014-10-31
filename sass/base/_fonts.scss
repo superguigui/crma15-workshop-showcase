@@ -1,8 +1,11 @@
-$fonts-folder: '../assets/fonts';
-// @include font-face('FontName', #{$fonts-folder}/'FontName/fontname');
-
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 %font-regular {
-    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+%font-light {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
 }

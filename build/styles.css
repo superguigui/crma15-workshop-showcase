@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 /*
     Bourbon imports
     
@@ -14,8 +14,13 @@
     Base styles
     html, fonts, colors...
  */
-body {
-  font-family: 'Oswald', sans-serif; }
+body, .name-button .name {
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif; }
+
+.name-button .title {
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif; }
 
 /*
     Utils
@@ -371,7 +376,7 @@ html, body {
   padding: 0; }
 
 body {
-  color: #333;
+  color: #0F0F0F;
   background: #222;
   position: relative;
   text-align: center; }
@@ -442,8 +447,8 @@ header {
 
 .name-button {
   display: block;
-  line-height: 50px;
-  height: 50px;
+  line-height: 80px;
+  height: 80px;
   position: relative; }
   .name-button .name, .name-button .title {
     display: inline-block;
