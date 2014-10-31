@@ -1,3 +1,6 @@
 [submodule "repos/clement-bardon"]
 	path = repos/clement-bardon
 	url = https://github.com/clmntclmnt/threejs-gblns
+[submodule "repos/leonard-hetsch"]
+	path = repos/leonard-hetsch
+	url = https://github.com/leoht/threejs-experiment
