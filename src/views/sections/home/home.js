@@ -116,10 +116,16 @@ module.exports = extend(true, {}, section, {
     },
     methods: {
         insertTweens: function() {
+            this.projects = this.shuffle(this.projects);
             this.tlTransition.fromTo(this.$el, 0.7, {alpha: 0, y: 50}, {alpha: 1, y: 0, ease: Expo.easeOut}, 0.4);
         },
-        beforeTransitionIn: function() {
 
+        shuffle: function(o) {
+            for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+            return o;
+        },
+
+        beforeTransitionIn: function() {
         }
     },
     
