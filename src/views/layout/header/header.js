@@ -6,6 +6,6 @@ module.exports = {
 
     },
     ready: function() {
-
+        
     }
 };

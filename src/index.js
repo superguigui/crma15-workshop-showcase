@@ -34,6 +34,7 @@ function init() {
         components: {
             /* LAYOUT */
             'footer': require('./views/layout/footer/footer'),
+            'header': require('./views/layout/header/header'),
 
             /* COMPONENTs */
             'nameButton': require('./views/components/nameButton/nameButton'),

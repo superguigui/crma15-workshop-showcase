@@ -14,7 +14,8 @@ gulp.task('styles', function() {
     .pipe(plumber())
     .pipe(sass({
         style: 'expanded',
-        sourceComments: 'nope'
+        sourceComments: 'nope',
+        includePaths: require('node-neat').includePaths
     }))
     .on('error', handleErrors)
     .pipe(autoprefixer())

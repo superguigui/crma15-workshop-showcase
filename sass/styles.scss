@@ -5,9 +5,10 @@
     Neat is a simple grid system
     Grid-settings is the configuration file for Neat
 */
-@import 'bourbon/bourbon';
+@import 'bourbon';
 @import 'utils/grid-settings';
-@import 'neat/neat';
+@import 'neat';
+
 
 /*
     Base styles
@@ -37,5 +38,6 @@
 @import "src/views/sections/about/about";
 
 @import "src/views/layout/footer/footer";
+@import "src/views/layout/header/header";
 
 @import "src/views/components/nameButton/nameButton";
