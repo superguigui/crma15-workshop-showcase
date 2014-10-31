@@ -6,6 +6,7 @@
     Neat is a simple grid system
     Grid-settings is the configuration file for Neat
 */
+/* line 2, /Users/clement/sites/experiments/node_modules/node-neat/assets/stylesheets/grid/grid */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -14,10 +15,12 @@
     Base styles
     html, fonts, colors...
  */
+/* line 3, /Users/clement/sites/experiments/sass/base/fonts */
 body, .name-button .name {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif; }
 
+/* line 8, /Users/clement/sites/experiments/sass/base/fonts */
 .name-button .title {
   font-weight: 300;
   font-family: 'Open Sans', sans-serif; }
@@ -33,6 +36,7 @@ body, .name-button .name {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+/* line 9, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -44,6 +48,7 @@ html {
 /**
  * Remove default margin.
  */
+/* line 19, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 body {
   margin: 0; }
 
@@ -54,6 +59,7 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
+/* line 43, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
@@ -61,6 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
+/* line 55, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 audio, canvas, progress, video {
   display: inline-block;
   /* 1 */
@@ -71,6 +78,7 @@ audio, canvas, progress, video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+/* line 65, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -79,6 +87,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
+/* line 76, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 [hidden], template {
   display: none; }
 
@@ -87,12 +96,14 @@ audio:not([controls]) {
 /**
  * Remove the gray background color from active links in IE 10.
  */
+/* line 87, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 a {
   background: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+/* line 96, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 a:active, a:hover {
   outline: 0; }
 
@@ -101,18 +112,21 @@ a:active, a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
+/* line 107, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
+/* line 116, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 b, strong {
   font-weight: bold; }
 
 /**
  * Address styling not present in Safari and Chrome.
  */
+/* line 124, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 dfn {
   font-style: italic; }
 
@@ -120,6 +134,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
+/* line 133, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -127,6 +142,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 142, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 mark {
   background: #ff0;
   color: #000; }
@@ -134,21 +150,25 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+/* line 151, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+/* line 160, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
+/* line 167, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 sup {
   top: -0.5em; }
 
+/* line 171, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 sub {
   bottom: -0.25em; }
 
@@ -157,12 +177,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
+/* line 182, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 img {
   border: 0; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
+/* line 190, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -171,12 +193,14 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
+/* line 201, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 figure {
   margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
+/* line 209, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -185,12 +209,14 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
+/* line 219, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 pre {
   overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
+/* line 230, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em; }
@@ -207,6 +233,7 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
+/* line 254, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 button, input, optgroup, select, textarea {
   color: inherit;
   /* 1 */
@@ -218,6 +245,7 @@ button, input, optgroup, select, textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
+/* line 264, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 button {
   overflow: visible; }
 
@@ -227,6 +255,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
+/* line 276, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 button, select {
   text-transform: none; }
 
@@ -237,6 +266,7 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
+/* line 291, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -246,12 +276,14 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
+/* line 301, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 button[disabled], html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+/* line 310, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -260,6 +292,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+/* line 320, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 input {
   line-height: normal; }
 
@@ -270,6 +303,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
+/* line 333, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 input[type="checkbox"], input[type="radio"] {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -282,6 +316,7 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
+/* line 345, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
@@ -290,6 +325,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
+/* line 355, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -302,12 +338,14 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
+/* line 369, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Define consistent border, margin, and padding.
  */
+/* line 377, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -317,6 +355,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
+/* line 388, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 legend {
   border: 0;
   /* 1 */
@@ -326,6 +365,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
+/* line 397, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 textarea {
   overflow: auto; }
 
@@ -333,6 +373,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
+/* line 406, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 optgroup {
   font-weight: bold; }
 
@@ -341,66 +382,82 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
+/* line 417, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 423, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 td, th {
   padding: 0; }
 
 /* Custom normalize */
+/* line 429, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 * {
   outline: none; }
 
+/* line 432, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 :focus {
   outline-color: transparent;
   outline-style: none; }
 
+/* line 438, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 h1, h2, h3, h4, h5 {
   font-weight: 400;
   margin: 0; }
 
+/* line 443, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 p {
   margin: 0; }
 
+/* line 447, /Users/clement/sites/experiments/sass/utils/normalize-custom */
 ul, ol {
   padding: 0;
   margin: 0; }
 
+/* line 1, /Users/clement/sites/experiments/sass/utils/extends/extends */
 html, body {
   width: 100%;
   height: 100%; }
 
+/* line 1, /Users/clement/sites/experiments/sass/base/base */
 html, body {
   margin: 0;
   padding: 0; }
 
+/* line 7, /Users/clement/sites/experiments/sass/base/base */
 body {
   color: #333;
   background: #222;
   position: relative;
   text-align: center; }
 
+/* line 15, /Users/clement/sites/experiments/sass/base/base */
 html {
   overflow-x: hidden;
   overflow-y: scroll; }
 
+/* line 20, /Users/clement/sites/experiments/sass/base/base */
 [v-cloak] {
   display: none; }
 
+/* line 24, /Users/clement/sites/experiments/sass/base/base */
 input[type=text]:focus, textarea:focus {
   box-shadow: none;
   border: none;
   outline: none; }
 
+/* line 30, /Users/clement/sites/experiments/sass/base/base */
 a {
   color: #444;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out; }
+  /* line 34, /Users/clement/sites/experiments/sass/base/base */
   a:hover {
     color: #007dac; }
 
+/* line 39, /Users/clement/sites/experiments/sass/base/base */
 ul, li {
   list-style-type: none;
   margin: 0;
@@ -409,54 +466,62 @@ ul, li {
 /*
     Sections and components styles
  */
+/* line 3, src/views/sections/home/home */
 .home ul li {
   font-size: 18px;
   border-bottom: 1px solid #2A2A2A;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  /* line 7, src/views/sections/home/home */
   .home ul li:first-child {
     border-top: 1px solid #2A2A2A; }
 
+/* line 1, src/views/sections/about/about */
 .about {
   padding: 30px; }
+  /* line 3, src/views/sections/about/about */
   .about h2 {
     text-transform: uppercase;
     font-size: 70px; }
 
+/* line 1, src/views/layout/footer/footer */
 footer {
   margin: 50px 0 50px 0;
   font-size: 12px; }
+  /* line 5, src/views/layout/footer/footer */
   footer a {
     display: inline-block;
     margin: 0 5px; }
 
+/* line 1, src/views/layout/header/header */
 header {
   padding-top: 50px; }
+  /* line 4, src/views/layout/header/header */
+  header img {
+    margin-bottom: 20px; }
+  /* line 8, src/views/layout/header/header */
   header h2 {
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px -1px 1px #51d0ff;
-    text-transform: uppercase;
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #007dac; }
-  header h3 {
     color: #555;
-    font-size: 23px;
+    font-size: 20px;
     margin-bottom: 40px;
     font-weight: 100; }
 
+/* line 1, src/views/components/nameButton/nameButton */
 .name-button {
   display: block;
   line-height: 80px;
   height: 80px;
   position: relative; }
+  /* line 7, src/views/components/nameButton/nameButton */
   .name-button .name, .name-button .title {
     display: inline-block;
     color: #333; }
+  /* line 16, src/views/components/nameButton/nameButton */
   .name-button .title {
     padding-left: 10px;
     opacity: 0;
     color: #FFF; }
+  /* line 23, src/views/components/nameButton/nameButton */
   .name-button .line {
     width: 100%;
     height: 1px;
