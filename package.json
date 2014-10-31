@@ -1,0 +1,86 @@
+{
+  "name": "patchwork-boilerplate",
+  "version": "0.1.3",
+  "description": "A gulp + sass + vuejs boilerplate.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ayamflow/patchwork"
+  },
+  "keywords": [
+    "boilerplate",
+    "vue.js",
+    "gulp",
+    "sass",
+    "scss",
+    "starter"
+  ],
+  "author": "= <=>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayamflow/patchwork/issues"
+  },
+  "browserify": {
+    "transform": [
+      "html-browserify",
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "TweenMax": "./node_modules/greensock/src/minified/TweenMax.min.js",
+    "TweenMax.ScrollToPlugin": "./node_modules/greensock/src/minified/plugins/ScrollToPlugin.min.js",
+    "fit": "./node_modules/fit/fit.min.js",
+    "forEach": "./node_modules/foreach.js/dist/foreach.min.js"
+  },
+  "browserify-shim": {
+    "TweenMax": "TweenMax",
+    "fit": "fit",
+    "forEach": "forEach",
+    "vue-query": "vue-query"
+  },
+  "napa": {
+    "greensock": "greensock/GreenSock-JS",
+    "fit": "soulwire/fit.js",
+    "foreach.js": "toddmotto/foreach",
+    "vue-query": "ayamflow/vue-query"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "watchify": "*",
+    "gulp-plumber": "*",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-sass": "*",
+    "vinyl-source-stream": "*",
+    "napa": "*",
+    "browserify": "^5.9.1",
+    "browserify-shim": "*",
+    "gulp-notify": "^1.4.0",
+    "vue-debug": "*",
+    "html-browserify": "*",
+    "del": "*",
+    "gulp-jshint": "^1.8.2",
+    "gulp-util": "^3.0.0",
+    "gulp-uglify": "*",
+    "pretty-hrtime": "*",
+    "remapify": "*",
+    "jshint-stylish": "*",
+    "debounce": "*",
+    "vue": "^0.10.6",
+    "yargs": "*",
+    "gulp-streamify": "0.0.5",
+    "gulp-minify-css": "~0.3.8",
+    "browser-sync": "~1.5.3"
+  },
+  "dependencies": {
+    "vue-el": "*",
+    "extend": "*",
+    "vue": "~0.10.5",
+    "superagent": "~0.18.1",
+    "page": "~1.3.7",
+    "bindall-standalone": "~1.0.4",
+    "component-emitter": "~1.1.3"
+  },
+  "scripts": {
+    "install": "napa"
+  }
+}

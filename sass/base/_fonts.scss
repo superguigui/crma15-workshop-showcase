@@ -1,0 +1,8 @@
+$fonts-folder: '../assets/fonts';
+// @include font-face('FontName', #{$fonts-folder}/'FontName/fontname');
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+%font-regular {
+    font-family: 'Oswald', sans-serif;
+}

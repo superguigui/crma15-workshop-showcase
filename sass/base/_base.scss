@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    @extend %full-size;
+}
+
+body {
+    color: #333;
+    background: #222;
+    position: relative;
+    text-align: center;
+    @extend %font-regular;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+    @include transition(color 0.3s ease-out);
+    &:hover {
+        color: #007dac;
+    }
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
