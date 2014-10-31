@@ -2,5 +2,5 @@
 .sass-cache
 node_modules/*
 !node_modules/vue-query
-build/*
-build/*
+build/build.js
+build/styles.css
