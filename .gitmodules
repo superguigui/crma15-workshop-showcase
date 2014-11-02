@@ -31,3 +31,6 @@
 [submodule "repos/louise-obe"]
 	path = repos/louise-obe
 	url = https://coucouclement@bitbucket.org/canellePB/obey.git
+[submodule "repos/jeremie-devoos"]
+	path = repos/jeremie-devoos
+	url = https://github.com/nemonemonemo/pyramids2
