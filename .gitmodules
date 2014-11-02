@@ -31,3 +31,6 @@
 [submodule "repos/lory-huz"]
 	path = repos/lory-huz
 	url = https://coucouclement@bitbucket.org/loryhuz/threejs-workshop.git
+[submodule "repos/louise-obe"]
+	path = repos/louise-obe
+	url = https://coucouclement@bitbucket.org/canellePB/obey.git
