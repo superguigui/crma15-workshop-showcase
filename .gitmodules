@@ -4,3 +4,30 @@
 [submodule "repos/leonard-hetsch"]
 	path = repos/leonard-hetsch
 	url = https://github.com/leoht/threejs-experiment
+[submodule "repos/glenn-sonna"]
+	path = repos/glenn-sonna
+	url = https://bitbucket.org/TheGlenn/visualizerexperiment.git
+[submodule "repos/nicolas-bonnot"]
+	path = repos/nicolas-bonnot
+	url = https://github.com/Nicoss/three-experiments
+[submodule "repos/kevin-budain"]
+	path = repos/kevin-budain
+	url = https://github.com/lowki93/threejs
+[submodule "repos/jean-baptiste-penrath"]
+	path = repos/jean-baptiste-penrath
+	url = https://github.com/jbpenrath/WorkshopThreeJS
+[submodule "repos/jeremie-devoos"]
+	path = repos/jeremie-devoos
+	url = https://github.com/nemonemonemo/pyramids-three-js
+[submodule "repos/katia-moreira"]
+	path = repos/katia-moreira
+	url = https://github.com/kaymorey/threejsexperiment.git
+[submodule "repos/geoffrey-thenot"]
+	path = repos/geoffrey-thenot
+	url = https://bitbucket.org/geoffrey_thenot/threejs-experiment
+[submodule "repos/antonin-langlade"]
+	path = repos/antonin-langlade
+	url = https://github.com/antoninlanglade/ThreeJSWordGenerator
+[submodule "repos/lory-huz"]
+	path = repos/lory-huz
+	url = https://coucouclement@bitbucket.org/loryhuz/threejs-workshop.git
