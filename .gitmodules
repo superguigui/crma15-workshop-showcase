@@ -16,9 +16,6 @@
 [submodule "repos/jean-baptiste-penrath"]
 	path = repos/jean-baptiste-penrath
 	url = https://github.com/jbpenrath/WorkshopThreeJS
-[submodule "repos/jeremie-devoos"]
-	path = repos/jeremie-devoos
-	url = https://github.com/nemonemonemo/pyramids-three-js
 [submodule "repos/katia-moreira"]
 	path = repos/katia-moreira
 	url = https://github.com/kaymorey/threejsexperiment.git
