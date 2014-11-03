@@ -28,7 +28,109 @@ function init() {
         el: 'body',
         data: {
             currentPage: null, // Current page id, used by v-pw-view
-            context: {} // reference to the router context
+            context: {}, // reference to the router context
+            projects: [
+                {
+                    id: 'clement',
+                    author: 'Clément Bardon',
+                    title: 'Awefully long title'
+                },
+                {
+                    id: 'nicolas',
+                    author: 'Nicolas Bonnot',
+                    title: 'Title'
+                },
+                {
+                    id: 'kevin',
+                    author: 'Kevin Budain',
+                    title: 'Title'
+                },
+                {
+                    id: 'bertrand',
+                    author: 'Bertrand Cayla',
+                    title: 'Title'
+                },
+                {
+                    id: 'etienne',
+                    author: 'Etienne Chaumont',
+                    title: 'Title'
+                },
+                {
+                    id: 'jordan',
+                    author: 'Jordan Delcros',
+                    title: 'Title'
+                },
+                {
+                    id: 'jeremie',
+                    author: 'Jérémie Devoos',
+                    title: 'Title'
+                },
+                {
+                    id: 'leonard',
+                    author: 'Léonard Hetsch',
+                    title: 'Title'
+                },
+                {
+                    id: 'samuel',
+                    author: 'Samuel Honigstein',
+                    title: 'Title'
+                },
+                {
+                    id: 'lory',
+                    author: 'Lory Huz',
+                    title: 'Title'
+                },
+                {
+                    id: 'guillaume',
+                    author: 'Guillaume Jasmin',
+                    title: 'Title'
+                },
+                {
+                    id: 'thomas',
+                    author: 'Thomas Josseau',
+                    title: 'Title'
+                },
+                {
+                    id: 'antonin',
+                    author: 'Antonin Langlade',
+                    title: 'Title'
+                },
+                {
+                    id: 'katia',
+                    author: 'Katia Moreira',
+                    title: 'Title'
+                },
+                {
+                    id: 'louise',
+                    author: 'Louise Obé',
+                    title: 'Title'
+                },
+                {
+                    id: 'jean-baptiste',
+                    author: 'Jean-Baptiste Penrath',
+                    title: 'Title'
+                },
+                {
+                    id: 'sylvain',
+                    author: 'Sylvain Reucherand',
+                    title: 'Title'
+                },
+                {
+                    id: 'glenn',
+                    author: 'Glenn Sonna',
+                    title: 'Title'
+                },
+                {
+                    id: 'alexis',
+                    author: 'Alexis Tessier',
+                    title: 'Title'
+                },
+                {
+                    id: 'geoffrey',
+                    author: 'Geoffrey Thenot',
+                    title: 'Title'
+                }
+            ]
         },
 
         components: {
