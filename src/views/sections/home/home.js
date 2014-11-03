@@ -13,102 +13,102 @@ module.exports = extend(true, {}, section, {
     data: {
         projects: [
             {
-                id: '0',
+                id: 'clement',
                 author: 'Clément Bardon',
                 title: 'Awefully long title'
             },
             {
-                id: '1',
+                id: 'nicolas',
                 author: 'Nicolas Bonnot',
                 title: 'Title'
             },
             {
-                id: '2',
+                id: 'kevin',
                 author: 'Kevin Budain',
                 title: 'Title'
             },
             {
-                id: '3',
+                id: 'bertrand',
                 author: 'Bertrand Cayla',
                 title: 'Title'
             },
             {
-                id: '1',
+                id: 'etienne',
                 author: 'Etienne Chaumont',
                 title: 'Title'
             },
             {
-                id: '2',
+                id: 'jordan',
                 author: 'Jordan Delcros',
                 title: 'Title'
             },
             {
-                id: '3',
+                id: 'jeremie',
                 author: 'Jérémie Devoos',
                 title: 'Title'
             },
             {
-                id: '1',
+                id: 'leonard',
                 author: 'Léonard Hetsch',
                 title: 'Title'
             },
             {
-                id: '2',
+                id: 'samuel',
                 author: 'Samuel Honigstein',
                 title: 'Title'
             },
             {
-                id: '3',
+                id: 'lory',
                 author: 'Lory Huz',
                 title: 'Title'
             },
             {
-                id: '1',
+                id: 'guillaume',
                 author: 'Guillaume Jasmin',
                 title: 'Title'
             },
             {
-                id: '2',
+                id: 'thomas',
                 author: 'Thomas Josseau',
                 title: 'Title'
             },
             {
-                id: '3',
+                id: 'antonin',
                 author: 'Antonin Langlade',
                 title: 'Title'
             },
             {
-                id: '1',
+                id: 'katia',
                 author: 'Katia Moreira',
                 title: 'Title'
             },
             {
-                id: '2',
+                id: 'louise',
                 author: 'Louise Obé',
                 title: 'Title'
             },
             {
-                id: '3',
+                id: 'jean-baptiste',
                 author: 'Jean-Baptiste Penrath',
                 title: 'Title'
             },
             {
-                id: '1',
+                id: 'sylvain',
                 author: 'Sylvain Reucherand',
                 title: 'Title'
             },
             {
-                id: '2',
+                id: 'glenn',
                 author: 'Glenn Sonna',
                 title: 'Title'
             },
             {
-                id: '3',
+                id: 'alexis',
                 author: 'Alexis Tessier',
                 title: 'Title'
             },
             {
-                id: '3',
+                id: 'geoffrey',
                 author: 'Geoffrey Thenot',
                 title: 'Title'
             }

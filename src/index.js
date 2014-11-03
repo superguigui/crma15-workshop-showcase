@@ -41,7 +41,7 @@ function init() {
 
             /* PAGES */
             'home': require('./views/sections/home/home'),
-            'about': require('./views/sections/about/about')
+            'project': require('./views/sections/project/project')
 
             /* COMMON */
 
@@ -55,7 +55,7 @@ function init() {
             router.on('router:update', this.onRouteUpdate.bind(this));
 
             router.addRoute(require('./views/sections/home/home').route);
-            router.addRoute(require('./views/sections/about/about').route);
+            router.addRoute(require('./views/sections/project/project').route);
             router.setDefaultRoute('home');
         },
 
