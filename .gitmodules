@@ -37,3 +37,12 @@
 [submodule "repos/sylvain-reucherand"]
 	path = repos/sylvain-reucherand
 	url = https://github.com/sreucherand/Euler
+[submodule "repos/etienne-chaumont"]
+	path = repos/etienne-chaumont
+	url = https://github.com/Threstle/Days
+[submodule "repos/guillaume-jasmin"]
+	path = repos/guillaume-jasmin
+	url = https://github.com/gjasmin/ThreejsExperiment
+[submodule "repos/samuel-honingstein"]
+	path = repos/samuel-honingstein
+	url = https://github.com/Samsy/ThreeJSPortfo
