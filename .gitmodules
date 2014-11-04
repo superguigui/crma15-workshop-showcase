@@ -34,3 +34,6 @@
 [submodule "repos/jeremie-devoos"]
 	path = repos/jeremie-devoos
 	url = https://github.com/nemonemonemo/pyramids2
+[submodule "repos/sylvain-reucherand"]
+	path = repos/sylvain-reucherand
+	url = https://github.com/sreucherand/Euler
