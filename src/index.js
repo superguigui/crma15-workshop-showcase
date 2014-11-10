@@ -143,7 +143,8 @@ function init() {
 
             /* PAGES */
             'home': require('./views/sections/home/home'),
-            'project': require('./views/sections/project/project')
+            'project': require('./views/sections/project/project'),
+            'projects-list': require('./views/sections/projects-list/projects-list')
 
             /* COMMON */
 
@@ -158,6 +159,7 @@ function init() {
 
             router.addRoute(require('./views/sections/home/home').route);
             router.addRoute(require('./views/sections/project/project').route);
+            router.addRoute(require('./views/sections/projects-list/projects-list').route);
             router.setDefaultRoute('home');
         },
 

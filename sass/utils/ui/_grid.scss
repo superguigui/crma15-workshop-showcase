@@ -1,0 +1,38 @@
+/* --------------------------------------------------
+Container
+-------------------------------------------------- */
+div#container, div.container { position: relative; width: 1160px; margin: 0 auto; padding: 0; }
+ 
+ 
+/* --------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row, .row { margin: 0 0 18px -40px; }
+.column, .columns { float: left; display: inline; margin: 0 0 0 40px; }
+ 
+.one { width: 110px; }
+.two { width: 260px; }
+.three { width: 410px; }
+.four { width: 560px; }
+.five { width: 710px; }
+.six { width: 860px; }
+.seven { width: 1010px; }
+.eight { width: 1160px; }
+ 
+.offset-by-one-half { margin-left: 75px; }
+.offset-by-one { margin-left: 150px; }
+.offset-by-two { margin-left: 300px; }
+.offset-by-three { margin-left: 450px; }
+.offset-by-four { margin-left: 600px; }
+.offset-by-five { margin-left: 750px; }
+.offset-by-six { margin-left: 900px; }
+ 
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .column-row, * html .row, * html .clearfix { height: 1%; }
+.column-row, .row, .clearfix { display: inline-block; }
+.column-row, .row, .clearfix { display: block; }
+ 
+/* IE6 Problems ---------- */
+body.ie .column-row { width: 1200px; }
+body.ie .two-thirds .column-row { width: 1240px; }

@@ -1,0 +1,37 @@
+.btn {}
+
+.btn--25 {
+	font-size: em(25);
+	letter-spacing: 1px;
+}
+
+.btn--white {
+	color: $white;
+}
+
+.btn--no-ap {
+	@include appearance(none);
+	background: none;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.btn--fill {
+	@include position();
+	padding-bottom: em(15);
+
+	&:after {
+		@include position(absolute, auto 100% 0px 0px);
+		@include transition(right 0.5s);
+		content: '';
+		background: $white;
+		height: 5px;
+	}
+
+	&:hover {
+		&:after {
+			right: 0%;
+		}
+	}
+}

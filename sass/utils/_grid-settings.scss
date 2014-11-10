@@ -1,10 +1,10 @@
 @import "base/variables";
 
-$column: 127px;
-$gutter: 10px;
-$grid-columns: 10;
-$grid-margin: 10;
-$max-width: calc(100% - 2 * #{$grid-margin});
+$column: 110px;
+$gutter: 30px;
+$grid-columns: 8;
+$grid-margin: 40;
+$max-width: 1160px;
 
 // DEBUG
 // $visual-grid: true;

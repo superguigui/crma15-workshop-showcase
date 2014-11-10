@@ -1,12 +1,13 @@
 .home {
-    ul {
-        li {
-            font-size: 18px;
-            border-bottom: 1px solid #2A2A2A;
-            @include box-sizing(border-box);
-            &:first-child {
-                border-top: 1px solid #2A2A2A;
-            }
-        }
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+    .home__heading {
+        margin-bottom: 30px;
+    }
+
+    .home__teasing {
+        margin-bottom: 65px;
+    }

@@ -5,20 +5,65 @@ html, body {
 }
 
 body {
-    color: #333;
-    background: #222;
+    // color: #333;
+    // background: $navy-blue;
+    // needs latest Compass, add '@import "compass"' to your scss
+    background: #14181f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #14181f 0%, #0b0e15 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#14181f), color-stop(100%,#0b0e15)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #14181f 0%,#0b0e15 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #14181f 0%,#0b0e15 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #14181f 0%,#0b0e15 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #14181f 0%,#0b0e15 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14181f', endColorstr='#0b0e15',GradientType=0 ); /* IE6-9 */
+
     position: relative;
-    text-align: center;
+    // text-align: center;
     @extend %font-regular;
+
+    &:after {
+        @include position(absolute, 0px 0px 0px auto);
+    }
+
+    &:after,
+    &:before {
+        content: '';
+        width: 8px;
+
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(133,135,138,0) 50%, rgba(11,14,21,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(50%,rgba(133,135,138,0)), color-stop(100%,rgba(11,14,21,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(133,135,138,0) 50%,rgba(11,14,21,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(133,135,138,0) 50%,rgba(11,14,21,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(133,135,138,0) 50%,rgba(11,14,21,0) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0.2) 0%,rgba(133,135,138,0) 50%,rgba(11,14,21,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#000b0e15',GradientType=0 ); /* IE6-9 */
+    }
+
+    &:before {
+        @include position(absolute, 0px auto 0px 0px);
+    }
 }
 
 html {
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        height: 8px;
+        @include position(absolute, 0px 8px 0 8px);
+        background: rgba($white, .2);
+    }
+    // overflow-y: scroll;
+
 }
 
 [v-cloak] {
     display: none;
+}
+
+.content-wrapper,
+.home {
+    height: 100%;
 }
 
 input[type=text]:focus, textarea:focus {

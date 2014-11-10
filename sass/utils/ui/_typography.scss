@@ -1,0 +1,17 @@
+.heading-1 {
+	font-size: em(35);
+	line-height: em(35/2);
+
+	span {
+		font-size: em(45, 35);
+		line-height: em(45/2, 45);
+	}
+}
+
+.teasing-1 {
+	font-size: em(23);
+
+	span {
+		font-size: em(24, 23);
+	}
+}

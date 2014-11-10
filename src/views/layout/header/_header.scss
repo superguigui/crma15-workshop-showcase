@@ -1,5 +1,7 @@
 header {
-    padding-top: 50px;
+    @include position(absolute, 0px 0px 0px 0);
+    height: 90px;
+    // padding-top: 50px;
 
     img {
         margin-bottom: 20px;

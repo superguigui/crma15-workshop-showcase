@@ -371,22 +371,215 @@ html, body {
   width: 100%;
   height: 100%; }
 
+/*
+    UI Related
+    Buttons, grids, etc.
+*/
+/* --------------------------------------------------
+Container
+-------------------------------------------------- */
+div#container, div.container {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0; }
+
+/* --------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row, .row {
+  margin: 0 0 18px -40px; }
+
+.column, .columns {
+  float: left;
+  display: inline;
+  margin: 0 0 0 40px; }
+
+.one {
+  width: 110px; }
+
+.two {
+  width: 260px; }
+
+.three {
+  width: 410px; }
+
+.four {
+  width: 560px; }
+
+.five {
+  width: 710px; }
+
+.six {
+  width: 860px; }
+
+.seven {
+  width: 1010px; }
+
+.eight {
+  width: 1160px; }
+
+.offset-by-one-half {
+  margin-left: 75px; }
+
+.offset-by-one {
+  margin-left: 150px; }
+
+.offset-by-two {
+  margin-left: 300px; }
+
+.offset-by-three {
+  margin-left: 450px; }
+
+.offset-by-four {
+  margin-left: 600px; }
+
+.offset-by-five {
+  margin-left: 750px; }
+
+.offset-by-six {
+  margin-left: 900px; }
+
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, .row:after, .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+* html .column-row, * html .row, * html .clearfix {
+  height: 1%; }
+
+.column-row, .row, .clearfix {
+  display: inline-block; }
+
+.column-row, .row, .clearfix {
+  display: block; }
+
+/* IE6 Problems ---------- */
+body.ie .column-row {
+  width: 1200px; }
+
+body.ie .two-thirds .column-row {
+  width: 1240px; }
+
+.btn--25 {
+  font-size: 1.5625em;
+  letter-spacing: 1px; }
+
+.btn--white {
+  color: #fff; }
+
+.btn--no-ap {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+  padding: 0px;
+  margin: 0px; }
+
+.btn--fill {
+  position: relative;
+  padding-bottom: 0.9375em; }
+  .btn--fill:after {
+    position: absolute;
+    top: auto;
+    right: 100%;
+    bottom: 0px;
+    left: 0px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s;
+    content: '';
+    background: #fff;
+    height: 5px; }
+  .btn--fill:hover:after {
+    right: 0%; }
+
+.heading-1 {
+  font-size: 2.1875em;
+  line-height: 1.09375em; }
+  .heading-1 span {
+    font-size: 1.28571em;
+    line-height: 0.5em; }
+
+.teasing-1 {
+  font-size: 1.4375em; }
+  .teasing-1 span {
+    font-size: 1.04348em; }
+
+.lower {
+  text-transform: lowercase; }
+
+.white {
+  color: #fff; }
+
+.soft-grey {
+  color: #6c7884; }
+
 html, body {
   margin: 0;
   padding: 0; }
 
 body {
-  color: #333;
-  background: #222;
-  position: relative;
-  text-align: center; }
+  background: #14181f;
+  /* Old browsers */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #14181f), color-stop(100%, #0b0e15));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #14181f 0%, #0b0e15 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear, to bottom, #14181f 0%, #0b0e15 100%;
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14181f', endColorstr='#0b0e15',GradientType=0 );
+  /* IE6-9 */
+  position: relative; }
+  body:after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: auto; }
+  body:after, body:before {
+    content: '';
+    width: 8px;
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(133, 135, 138, 0)), color-stop(100%, rgba(11, 14, 21, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(133, 135, 138, 0) 50%, rgba(11, 14, 21, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear, to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(133, 135, 138, 0) 50%, rgba(11, 14, 21, 0) 100%;
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#000b0e15',GradientType=0 );
+    /* IE6-9 */ }
+  body:before {
+    position: absolute;
+    top: 0px;
+    right: auto;
+    bottom: 0px;
+    left: 0px; }
 
 html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
+  overflow: hidden; }
+  html:before {
+    content: '';
+    height: 8px;
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    bottom: 0;
+    left: 8px;
+    background: rgba(255, 255, 255, 0.2); }
 
 [v-cloak] {
   display: none; }
+
+.content-wrapper, .home {
+  height: 100%; }
 
 input[type=text]:focus, textarea:focus {
   box-shadow: none;
@@ -409,13 +602,22 @@ ul, li {
 /*
     Sections and components styles
  */
-.home ul li {
-  font-size: 18px;
-  border-bottom: 1px solid #2A2A2A;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  .home ul li:first-child {
-    border-top: 1px solid #2A2A2A; }
+.home {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.home__heading {
+  margin-bottom: 30px; }
+
+.home__teasing {
+  margin-bottom: 65px; }
 
 .project {
   padding: 30px; }
@@ -431,7 +633,12 @@ footer {
     margin: 0 5px; }
 
 header {
-  padding-top: 50px; }
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0;
+  height: 90px; }
   header img {
     margin-bottom: 20px; }
   header h2 {
