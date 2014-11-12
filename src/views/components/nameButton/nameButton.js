@@ -11,12 +11,10 @@ module.exports = {
             console.log('onMouseOver');
             TweenMax.to(this.$$.name, 0.6, {x: 0, color: '#007dac', ease: Expo.easeOut});
             TweenMax.to(this.$$.title, 0.6, {alpha: 1, x: 0, ease: Expo.easeOut});
-            TweenMax.to(this.$$.line, 1, {scaleX: 1, ease: Expo.easeOut});
         },
         onMouseOut: function(e) {
             TweenMax.to(this.$$.name, 0.6, {x: this.$$.title.offsetWidth * 0.5, color: '#333', ease: Expo.easeOut});
             TweenMax.to(this.$$.title, 0.6, {alpha: 0, x: this.$$.title.offsetWidth * 0.5, ease: Expo.easeOut });
-            TweenMax.to(this.$$.line, 1, {scaleX: 0, ease: Expo.easeOut});
         },
         init: function() {
             TweenMax.set(this.$$.name, {x: this.$$.title.offsetWidth * 0.5});
@@ -24,7 +22,7 @@ module.exports = {
         }
     },
     ready: function() {
-        this.url = 'project/' + this.project.id;
+        // this.url = 'project/' + this.project.id;
         bindAll(this, 'init');
         Vue.nextTick(this.init);
     }

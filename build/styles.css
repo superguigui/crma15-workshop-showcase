@@ -493,8 +493,10 @@ body.ie .two-thirds .column-row {
     content: '';
     background: #fff;
     height: 5px; }
-  .btn--fill:hover:after {
-    right: 0%; }
+  .btn--fill:hover {
+    color: #fff; }
+    .btn--fill:hover:after {
+      right: 0%; }
 
 .heading-1 {
   font-size: 2.1875em;
