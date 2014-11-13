@@ -154,6 +154,10 @@ function init() {
             'pw-view': require('base/view')
         },
 
+        filters: {
+            'startAt': require('base/start-at')
+        },
+
         ready: function() {
             router.on('router:update', this.onRouteUpdate.bind(this));
 

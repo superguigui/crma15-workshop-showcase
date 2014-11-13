@@ -1,13 +1,19 @@
 <div class="projects-list">
 	<div class="container">
 		<div class="row">
-	        <div v-repeat="project: projects | startAt 0 | limitTo 4" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	        <div v-repeat="project: projects | startAt 0" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
 		</div>
 		<div class="row">
-	        <div v-repeat="project: projects | startAt 5 | limitTo 9" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	        <div v-repeat="project: projects | startAt 4" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
 	    </div>
 	    <div class="row">
-	        <div v-repeat="project: projects | startAt 10 | limitTo 14" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	        <div v-repeat="project: projects | startAt 8" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	    </div>
+	    <div class="row">
+	        <div v-repeat="project: projects | startAt 12" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	    </div>
+	    <div class="row">
+	        <div v-repeat="project: projects | startAt 16" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
 	    </div>
 	</div>
 </div>

@@ -11,7 +11,7 @@ module.exports = extend(true, {}, section, {
         path: '/projects-list'
     },
     data: {
-        
+
     },
     methods: {
         insertTweens: function() {
@@ -26,9 +26,10 @@ module.exports = extend(true, {}, section, {
 
         beforeTransitionIn: function() {
             // this.newRow = true;
-        }
+
+        },
     },
-    
+
     ready: function() {
 
     },
