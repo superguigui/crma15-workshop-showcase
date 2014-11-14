@@ -27,18 +27,21 @@
     ]
   },
   "browser": {
+    "Proton": "./node_modules/proton/build/proton-1.0.0.js",
     "TweenMax": "./node_modules/greensock/src/minified/TweenMax.min.js",
     "TweenMax.ScrollToPlugin": "./node_modules/greensock/src/minified/plugins/ScrollToPlugin.min.js",
     "fit": "./node_modules/fit/fit.min.js",
     "forEach": "./node_modules/foreach.js/dist/foreach.min.js"
   },
   "browserify-shim": {
+    "Proton": "Proton",
     "TweenMax": "TweenMax",
     "fit": "fit",
     "forEach": "forEach",
     "vue-query": "vue-query"
   },
   "napa": {
+    "proton": "a-jie/Proton",
     "greensock": "greensock/GreenSock-JS",
     "fit": "soulwire/fit.js",
     "foreach.js": "toddmotto/foreach",
@@ -74,13 +77,14 @@
     "yargs": "*"
   },
   "dependencies": {
-    "vue-el": "*",
-    "extend": "*",
-    "vue": "~0.10.5",
-    "superagent": "~0.18.1",
-    "page": "~1.3.7",
     "bindall-standalone": "~1.0.4",
-    "component-emitter": "~1.1.3"
+    "bluebird": "^2.3.11",
+    "component-emitter": "~1.1.3",
+    "extend": "*",
+    "page": "~1.3.7",
+    "superagent": "~0.18.1",
+    "vue": "~0.10.5",
+    "vue-el": "*"
   },
   "scripts": {
     "install": "napa"

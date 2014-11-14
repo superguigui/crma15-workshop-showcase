@@ -16,7 +16,9 @@
 
 var Vue = require('vue'),
     router = require('./router'),
-    TweenMax = require('TweenMax');
+    TweenMax = require('TweenMax'),
+    Cloud = require('./cloud');
+
 
 /*
     Plugins, lib config...
@@ -24,6 +26,7 @@ var Vue = require('vue'),
 require('./imports');
 
 function init() {
+
     var app = new Vue({
         el: 'body',
         data: {
@@ -175,6 +178,28 @@ function init() {
             }
         }
     });
+    
+    var cloud = new Cloud('stage');
+    
+    cloud.register('gobelins', 'assets/images/gobelins.png');
+    cloud.start('gobelins');
+    
+    var animate = function () {
+        window.requestAnimationFrame(animate);
+        
+        cloud.render();
+    }
+    
+    window.addEventListener('resize', function () {
+        cloud.resize(window.innerWidth, window.innerHeight);
+    });
+    
+    animate();
 }
 
 window.onload = init;
+window.requestAnimationFrame = (function() {
+    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function(callback) {
+        window.setTimeout(callback, 1000/60);
+    };
+})();

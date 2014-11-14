@@ -8,14 +8,8 @@ body {
     // color: #333;
     // background: $navy-blue;
     // needs latest Compass, add '@import "compass"' to your scss
-    background: #14181f; /* Old browsers */
-    background: -moz-linear-gradient(top,  #14181f 0%, #0b0e15 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#14181f), color-stop(100%,#0b0e15)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #14181f 0%,#0b0e15 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #14181f 0%,#0b0e15 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #14181f 0%,#0b0e15 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #14181f 0%,#0b0e15 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14181f', endColorstr='#0b0e15',GradientType=0 ); /* IE6-9 */
+    @include background-image(radial-gradient(center, ellipse cover, hsla(0, 0, 0, 0) 0%, hsla(0, 0, 0, 0) 50%, hsla(0, 0, 0, 0.25) 100%), url('../assets/images/pattern.png'));
+    
 
     position: relative;
     // text-align: center;
