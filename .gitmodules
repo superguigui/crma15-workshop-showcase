@@ -46,3 +46,9 @@
 [submodule "repos/samuel-honingstein"]
 	path = repos/samuel-honingstein
 	url = https://github.com/Samsy/ThreeJSPortfo
+[submodule "repos/thomas-josseau"]
+	path = repos/thomas-josseau
+	url = https://github.com/tjosseau/flatland-demoscene
+[submodule "repos/alexis-tessier"]
+	path = repos/alexis-tessier
+	url = https://bitbucket.org/AlexisTessier/lunar-experiment
