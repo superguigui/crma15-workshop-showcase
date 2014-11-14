@@ -9,20 +9,21 @@ module.exports = {
     methods: {
         onMouseOver: function(e) {
             console.log('onMouseOver');
-            TweenMax.to(this.$$.name, 0.6, {x: 0, color: '#007dac', ease: Expo.easeOut});
-            TweenMax.to(this.$$.title, 0.6, {alpha: 1, x: 0, ease: Expo.easeOut});
+            TweenMax.to(this.$$.name, 0.6, {y: 0, ease: Expo.easeOut});
+            TweenMax.to(this.$$.title, 0.6, {alpha: 1, y: 0, ease: Expo.easeOut});
         },
         onMouseOut: function(e) {
-            TweenMax.to(this.$$.name, 0.6, {x: this.$$.title.offsetWidth * 0.5, color: '#333', ease: Expo.easeOut});
-            TweenMax.to(this.$$.title, 0.6, {alpha: 0, x: this.$$.title.offsetWidth * 0.5, ease: Expo.easeOut });
+            console.log('onMouseOut');
+            TweenMax.to(this.$$.name, 0.6, {y: this.$$.title.offsetHeight * 0.5, ease: Expo.easeOut});
+            TweenMax.to(this.$$.title, 0.6, {alpha: 0, y: -this.$$.title.offsetHeight * 0.5, ease: Expo.easeOut });
         },
         init: function() {
-            TweenMax.set(this.$$.name, {x: this.$$.title.offsetWidth * 0.5});
-            TweenMax.set(this.$$.title, {x: this.$$.title.offsetWidth * 0.5});
+            TweenMax.set(this.$$.name, {y: this.$$.title.offsetHeight * 0.5});
+            TweenMax.set(this.$$.title, {y: -this.$$.title.offsetHeight * 0.5});
         }
     },
     ready: function() {
-        // this.url = 'project/' + this.project.id;
+        this.url = 'project/' + this.project.id;
         bindAll(this, 'init');
         Vue.nextTick(this.init);
     }
