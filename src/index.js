@@ -158,7 +158,7 @@ function init() {
         },
 
         filters: {
-            'startAt': require('base/start-at')
+            'limitToRange': require('base/limit-to-range')
         },
 
         ready: function() {
@@ -178,22 +178,22 @@ function init() {
             }
         }
     });
-    
+
     var cloud = new Cloud('stage');
-    
+
     cloud.register('gobelins', 'assets/images/gobelins.png');
     cloud.start('gobelins');
-    
+
     var animate = function () {
         window.requestAnimationFrame(animate);
-        
+
         cloud.render();
     }
-    
+
     window.addEventListener('resize', function () {
         cloud.resize(window.innerWidth, window.innerHeight);
     });
-    
+
     animate();
 }
 

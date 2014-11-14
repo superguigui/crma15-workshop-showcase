@@ -1,19 +1,19 @@
 <div class="projects-list">
 	<div class="container">
 		<div class="row">
-	        <div v-repeat="project: projects | startAt 0" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	        <div v-repeat="project: projects | limitToRange 0 4" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
 		</div>
 		<div class="row">
-	        <div v-repeat="project: projects | startAt 4" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	        <div v-repeat="project: projects | limitToRange 4 8" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
 	    </div>
 	    <div class="row">
-	        <div v-repeat="project: projects | startAt 8" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	        <div v-repeat="project: projects | limitToRange 8 12" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
 	    </div>
 	    <div class="row">
-	        <div v-repeat="project: projects | startAt 12" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	        <div v-repeat="project: projects | limitToRange 12 16" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
 	    </div>
 	    <div class="row">
-	        <div v-repeat="project: projects | startAt 16" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
+	        <div v-repeat="project: projects | limitToRange 16 20" class="column two" v-el="links" v-component="nameButton" v-with="project"></div>
 	    </div>
 	</div>
 </div>
