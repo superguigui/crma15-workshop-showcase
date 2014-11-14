@@ -1,7 +1,5 @@
 'use strict';
 
-var Vue = require('vue');
-
 module.exports = {
     apply: function(ctx, vals) {
         this.valueToStart = parseInt(vals[1], 10);
