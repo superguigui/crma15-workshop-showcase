@@ -8,10 +8,21 @@
 	}
 }
 
+.heading-2 {
+	font-size: em(30);
+	line-height: em(30/2);
+}
+
 .teasing-1 {
 	font-size: em(23);
 
 	span {
 		font-size: em(24, 23);
 	}
+}
+
+.teasing-2 {
+	font-size: em(20);
+	line-height: em(20/2);
+	letter-spacing: em(1);
 }

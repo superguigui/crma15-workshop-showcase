@@ -505,10 +505,19 @@ body.ie .two-thirds .column-row {
     font-size: 1.28571em;
     line-height: 0.5em; }
 
+.heading-2 {
+  font-size: 1.875em;
+  line-height: 0.9375em; }
+
 .teasing-1 {
   font-size: 1.4375em; }
   .teasing-1 span {
     font-size: 1.04348em; }
+
+.teasing-2 {
+  font-size: 1.25em;
+  line-height: 0.625em;
+  letter-spacing: 0.0625em; }
 
 .lower {
   text-transform: lowercase; }
@@ -518,6 +527,9 @@ body.ie .two-thirds .column-row {
 
 .soft-grey {
   color: #6c7884; }
+
+.align-center {
+  text-align: center; }
 
 #stage {
   position: absolute;
@@ -634,6 +646,12 @@ ul, li {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.projects-list__heading {
+  margin-bottom: 1.5625em; }
+
+.projects-list__teasing {
+  margin-bottom: 1.0625em; }
 
 footer {
   margin: 50px 0 50px 0;

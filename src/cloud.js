@@ -1,7 +1,7 @@
 'use strict';
 
 var Proton = require('Proton');
-var Promise = require('Bluebird');
+var Promise = require('bluebird');
 
 module.exports = (function () {
 
@@ -11,7 +11,7 @@ module.exports = (function () {
 
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
-        
+
         this.proton = new Proton;
 
         this.renderer = new Proton.Renderer('canvas', this.proton, this.canvas);
