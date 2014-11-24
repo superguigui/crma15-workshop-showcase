@@ -49,3 +49,6 @@
 [submodule "repos/alexis-tessier"]
 	path = repos/alexis-tessier
 	url = https://bitbucket.org/AlexisTessier/lunar-experiment
+[submodule "repos/etienne-chaumont"]
+	path = repos/etienne-chaumont
+	url = https://github.com/Threstle/Days
