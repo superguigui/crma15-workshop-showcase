@@ -55,3 +55,6 @@
 [submodule "repos/jordan-delcros"]
 	path = repos/jordan-delcros
 	url = https://github.com/JordanDelcros/lab_grenade
+[submodule "repos/bertrand-cayla"]
+	path = repos/bertrand-cayla
+	url = https://github.com/Vandell/ThreeJS-Experiment.git
