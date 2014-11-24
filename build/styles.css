@@ -589,7 +589,7 @@ html {
 [v-cloak] {
   display: none; }
 
-.content-wrapper, .home, .projects-list {
+.content-wrapper, .home, .projects-list, .project {
   height: 100%; }
 
 input[type=text]:focus, textarea:focus {
@@ -631,10 +631,20 @@ ul, li {
   margin-bottom: 65px; }
 
 .project {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 30px; }
-  .project h2 {
-    text-transform: uppercase;
-    font-size: 70px; }
+  .project iframe {
+    display: flex-box;
+    width: 100%;
+    height: 100%; }
 
 .projects-list {
   display: -webkit-flex;
@@ -680,7 +690,8 @@ header {
   position: relative;
   padding: 15px 0; }
   .name-button .name, .name-button .title {
-    display: block; }
+    display: block;
+    pointer-events: none; }
   .name-button .name {
     font-size: 1.3125em; }
   .name-button .title {

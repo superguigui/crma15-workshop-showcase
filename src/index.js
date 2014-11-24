@@ -34,102 +34,102 @@ function init() {
             context: {}, // reference to the router context
             projects: [
                 {
-                    id: 'clement',
+                    id: 'clement-bardon',
                     author: 'Clément Bardon',
                     title: 'Awefully long title'
                 },
                 {
-                    id: 'nicolas',
+                    id: 'nicolas-bonnot',
                     author: 'Nicolas Bonnot',
                     title: 'Title'
                 },
                 {
-                    id: 'kevin',
+                    id: 'kevin-budain',
                     author: 'Kevin Budain',
                     title: 'Title'
                 },
                 {
-                    id: 'bertrand',
+                    id: 'bertrand-cayla',
                     author: 'Bertrand Cayla',
                     title: 'Title'
                 },
                 {
-                    id: 'etienne',
+                    id: 'etienne-chaumont',
                     author: 'Etienne Chaumont',
                     title: 'Title'
                 },
                 {
-                    id: 'jordan',
+                    id: 'jordan-delcros',
                     author: 'Jordan Delcros',
                     title: 'Title'
                 },
                 {
-                    id: 'jeremie',
+                    id: 'jeremie-devoos',
                     author: 'Jérémie Devoos',
                     title: 'Title'
                 },
                 {
-                    id: 'leonard',
+                    id: 'leonard-hetsch',
                     author: 'Léonard Hetsch',
                     title: 'Title'
                 },
                 {
-                    id: 'samuel',
+                    id: 'samuel-honingstein',
                     author: 'Samuel Honigstein',
                     title: 'Title'
                 },
                 {
-                    id: 'lory',
+                    id: 'lory-huz',
                     author: 'Lory Huz',
                     title: 'Title'
                 },
                 {
-                    id: 'guillaume',
+                    id: 'guillaume-jasmin',
                     author: 'Guillaume Jasmin',
                     title: 'Title'
                 },
                 {
-                    id: 'thomas',
+                    id: 'thomas-josseau',
                     author: 'Thomas Josseau',
                     title: 'Title'
                 },
                 {
-                    id: 'antonin',
+                    id: 'antonin-langlade',
                     author: 'Antonin Langlade',
                     title: 'Title'
                 },
                 {
-                    id: 'katia',
+                    id: 'katia-moreira',
                     author: 'Katia Moreira',
                     title: 'Title'
                 },
                 {
-                    id: 'louise',
+                    id: 'louise-obe',
                     author: 'Louise Obé',
                     title: 'Title'
                 },
                 {
-                    id: 'jean-baptiste',
+                    id: 'jean-baptiste-penrath',
                     author: 'Jean-Baptiste Penrath',
                     title: 'Title'
                 },
                 {
-                    id: 'sylvain',
+                    id: 'sylvain-reucherand',
                     author: 'Sylvain Reucherand',
                     title: 'Title'
                 },
                 {
-                    id: 'glenn',
+                    id: 'glenn-sonna',
                     author: 'Glenn Sonna',
                     title: 'Title'
                 },
                 {
-                    id: 'alexis',
+                    id: 'alexis-tessier',
                     author: 'Alexis Tessier',
                     title: 'Title'
                 },
                 {
-                    id: 'geoffrey',
+                    id: 'geoffrey-thenot',
                     author: 'Geoffrey Thenot',
                     title: 'Title'
                 }
