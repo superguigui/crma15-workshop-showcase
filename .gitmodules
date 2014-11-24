@@ -52,3 +52,6 @@
 [submodule "repos/etienne-chaumont"]
 	path = repos/etienne-chaumont
 	url = https://github.com/Threstle/Days
+[submodule "repos/jordan-delcros"]
+	path = repos/jordan-delcros
+	url = https://github.com/JordanDelcros/lab_grenade
