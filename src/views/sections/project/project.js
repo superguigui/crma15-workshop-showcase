@@ -22,15 +22,12 @@ module.exports = extend(true, {}, section, {
             this.project = this.$root.$data.projects.filter(function(value){
                 return value.id === this.$options.route.params.id;
             }, this)[0];
-            console.log("id", this.project, this.$options.route.params.id);
-
         }
     },
-    
+
     ready: function() {
     },
 
     beforeDestroy: function() {
-
     }
 });

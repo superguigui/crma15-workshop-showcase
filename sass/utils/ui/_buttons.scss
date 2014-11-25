@@ -37,3 +37,8 @@
 		}
 	}
 }
+
+.btn--info {
+	color: $white;
+	@extend .btn--25;
+}

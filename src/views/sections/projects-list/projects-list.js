@@ -25,8 +25,6 @@ module.exports = extend(true, {}, section, {
         },
 
         beforeTransitionIn: function() {
-            // this.newRow = true;
-
         },
     },
 

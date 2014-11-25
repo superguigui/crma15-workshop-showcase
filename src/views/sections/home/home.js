@@ -11,7 +11,7 @@ module.exports = extend(true, {}, section, {
         path: '/home'
     },
     data: {
-        
+
     },
     methods: {
         insertTweens: function() {
@@ -21,11 +21,10 @@ module.exports = extend(true, {}, section, {
         beforeTransitionIn: function() {
         }
     },
-    
+
     ready: function() {
     },
 
     beforeDestroy: function() {
-
     }
 });
