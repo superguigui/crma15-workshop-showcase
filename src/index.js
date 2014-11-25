@@ -36,102 +36,102 @@ function init() {
                 {
                     id: 'clement-bardon',
                     author: 'Clément Bardon',
-                    title: 'Awefully long title'
+                    title: 'Blow!'
                 },
                 {
                     id: 'nicolas-bonnot',
                     author: 'Nicolas Bonnot',
-                    title: 'Title'
+                    title: 'Pixel Vinyl'
                 },
                 {
                     id: 'kevin-budain',
                     author: 'Kevin Budain',
-                    title: 'Title'
+                    title: 'Planets'
                 },
                 {
                     id: 'bertrand-cayla',
                     author: 'Bertrand Cayla',
-                    title: 'Title'
+                    title: 'Aqua'
                 },
                 {
                     id: 'etienne-chaumont',
                     author: 'Etienne Chaumont',
-                    title: 'Title'
+                    title: 'Days'
                 },
                 {
                     id: 'jordan-delcros',
                     author: 'Jordan Delcros',
-                    title: 'Title'
+                    title: 'Grenade'
                 },
                 {
                     id: 'jeremie-devoos',
                     author: 'Jérémie Devoos',
-                    title: 'Title'
+                    title: 'Pyramids are not Triangles'
                 },
                 {
                     id: 'leonard-hetsch',
                     author: 'Léonard Hetsch',
-                    title: 'Title'
+                    title: 'Balloon'
                 },
                 {
-                    id: 'samuel-honingstein',
+                    id: 'samuel-honigstein',
                     author: 'Samuel Honigstein',
-                    title: 'Title'
+                    title: 'Kinectic Surface'
                 },
                 {
                     id: 'lory-huz',
                     author: 'Lory Huz',
-                    title: 'Title'
+                    title: 'Shape Fighter'
                 },
                 {
                     id: 'guillaume-jasmin',
                     author: 'Guillaume Jasmin',
-                    title: 'Title'
+                    title: 'Bob'
                 },
                 {
                     id: 'thomas-josseau',
                     author: 'Thomas Josseau',
-                    title: 'Title'
+                    title: 'Flatland'
                 },
                 {
                     id: 'antonin-langlade',
                     author: 'Antonin Langlade',
-                    title: 'Title'
+                    title: 'Words'
                 },
                 {
                     id: 'katia-moreira',
                     author: 'Katia Moreira',
-                    title: 'Title'
+                    title: '3D is better'
                 },
                 {
                     id: 'louise-obe',
                     author: 'Louise Obé',
-                    title: 'Title'
+                    title: 'Morphing pool'
                 },
                 {
                     id: 'jean-baptiste-penrath',
                     author: 'Jean-Baptiste Penrath',
-                    title: 'Title'
+                    title: 'Circles'
                 },
                 {
                     id: 'sylvain-reucherand',
                     author: 'Sylvain Reucherand',
-                    title: 'Title'
+                    title: 'Euler'
                 },
                 {
                     id: 'glenn-sonna',
                     author: 'Glenn Sonna',
-                    title: 'Title'
+                    title: 'Dancelines'
                 },
                 {
                     id: 'alexis-tessier',
                     author: 'Alexis Tessier',
-                    title: 'Title'
+                    title: 'Lunar'
                 },
                 {
                     id: 'geoffrey-thenot',
                     author: 'Geoffrey Thenot',
-                    title: 'Title'
+                    title: 'Birds'
                 }
             ]
         },
