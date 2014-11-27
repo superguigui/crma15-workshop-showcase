@@ -5,6 +5,7 @@
     Neat is a simple grid system
     Grid-settings is the configuration file for Neat
 */
+/* line 2, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/node_modules/node-neat/assets/stylesheets/grid/grid */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -24,6 +25,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+/* line 9, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -35,6 +37,7 @@ html {
 /**
  * Remove default margin.
  */
+/* line 19, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 body {
   margin: 0; }
 
@@ -45,6 +48,7 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
+/* line 43, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
@@ -52,6 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
+/* line 55, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 audio, canvas, progress, video {
   display: inline-block;
   /* 1 */
@@ -62,6 +67,7 @@ audio, canvas, progress, video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+/* line 65, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -70,6 +76,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
+/* line 76, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 [hidden], template {
   display: none; }
 
@@ -78,12 +85,14 @@ audio:not([controls]) {
 /**
  * Remove the gray background color from active links in IE 10.
  */
+/* line 87, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 a {
   background: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+/* line 96, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 a:active, a:hover {
   outline: 0; }
 
@@ -92,18 +101,21 @@ a:active, a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
+/* line 107, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
+/* line 116, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 b, strong {
   font-weight: bold; }
 
 /**
  * Address styling not present in Safari and Chrome.
  */
+/* line 124, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 dfn {
   font-style: italic; }
 
@@ -111,6 +123,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
+/* line 133, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -118,6 +131,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 142, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 mark {
   background: #ff0;
   color: #000; }
@@ -125,21 +139,25 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+/* line 151, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+/* line 160, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
+/* line 167, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 sup {
   top: -0.5em; }
 
+/* line 171, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 sub {
   bottom: -0.25em; }
 
@@ -148,12 +166,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
+/* line 182, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 img {
   border: 0; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
+/* line 190, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -162,12 +182,14 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
+/* line 201, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 figure {
   margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
+/* line 209, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -176,12 +198,14 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
+/* line 219, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 pre {
   overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
+/* line 230, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em; }
@@ -198,6 +222,7 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
+/* line 254, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 button, input, optgroup, select, textarea {
   color: inherit;
   /* 1 */
@@ -209,6 +234,7 @@ button, input, optgroup, select, textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
+/* line 264, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 button {
   overflow: visible; }
 
@@ -218,6 +244,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
+/* line 276, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 button, select {
   text-transform: none; }
 
@@ -228,6 +255,7 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
+/* line 291, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -237,12 +265,14 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
+/* line 301, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 button[disabled], html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+/* line 310, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -251,6 +281,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+/* line 320, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 input {
   line-height: normal; }
 
@@ -261,6 +292,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
+/* line 333, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 input[type="checkbox"], input[type="radio"] {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -273,6 +305,7 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
+/* line 345, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
@@ -281,6 +314,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
+/* line 355, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -293,12 +327,14 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
+/* line 369, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Define consistent border, margin, and padding.
  */
+/* line 377, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -308,6 +344,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
+/* line 388, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 legend {
   border: 0;
   /* 1 */
@@ -317,6 +354,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
+/* line 397, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 textarea {
   overflow: auto; }
 
@@ -324,6 +362,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
+/* line 406, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 optgroup {
   font-weight: bold; }
 
@@ -332,36 +371,45 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
+/* line 417, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 423, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 td, th {
   padding: 0; }
 
 /* Custom normalize */
+/* line 429, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 * {
   outline: none; }
 
+/* line 432, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 :focus {
   outline-color: transparent;
   outline-style: none; }
 
+/* line 438, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 h1, h2, h3, h4, h5 {
   font-weight: 400;
   margin: 0; }
 
+/* line 443, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 p {
   margin: 0; }
 
+/* line 447, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/normalize-custom */
 ul, ol {
   padding: 0;
   margin: 0; }
 
+/* line 1, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/extends/extends */
 html, body {
   width: 100%;
   height: 100%; }
 
+/* line 14, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/extends/extends */
 .name-button {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
@@ -373,6 +421,7 @@ html, body {
 /* --------------------------------------------------
 Container
 -------------------------------------------------- */
+/* line 4, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 div#container, div.container {
   position: relative;
   width: 1160px;
@@ -382,60 +431,78 @@ div#container, div.container {
 /* --------------------------------------------------
 Grid
 -------------------------------------------------- */
+/* line 10, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .column-row, .row {
   margin: 0 0 18px -40px; }
 
+/* line 11, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .column, .columns {
   float: left;
   display: inline;
   margin: 0 0 0 40px; }
 
+/* line 13, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .one {
   width: 110px; }
 
+/* line 14, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .two {
   width: 260px; }
 
+/* line 15, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .three {
   width: 410px; }
 
+/* line 16, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .four {
   width: 560px; }
 
+/* line 17, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .five {
   width: 710px; }
 
+/* line 18, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .six {
   width: 860px; }
 
+/* line 19, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .seven {
   width: 1010px; }
 
+/* line 20, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .eight {
   width: 1160px; }
 
+/* line 22, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .offset-by-one-half {
   margin-left: 75px; }
 
+/* line 23, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .offset-by-one {
   margin-left: 150px; }
 
+/* line 24, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .offset-by-two {
   margin-left: 300px; }
 
+/* line 25, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .offset-by-three {
   margin-left: 450px; }
 
+/* line 26, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .offset-by-four {
   margin-left: 600px; }
 
+/* line 27, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .offset-by-five {
   margin-left: 750px; }
 
+/* line 28, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .offset-by-six {
   margin-left: 900px; }
 
 /* Clear the columns automagically, thanks @kneath */
+/* line 31, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .column-row:after, .row:after, .clearfix:after {
   content: ".";
   display: block;
@@ -443,29 +510,37 @@ Grid
   clear: both;
   visibility: hidden; }
 
+/* line 32, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 * html .column-row, * html .row, * html .clearfix {
   height: 1%; }
 
+/* line 33, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .column-row, .row, .clearfix {
   display: inline-block; }
 
+/* line 34, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 .column-row, .row, .clearfix {
   display: block; }
 
 /* IE6 Problems ---------- */
+/* line 37, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 body.ie .column-row {
   width: 1200px; }
 
+/* line 38, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/grid */
 body.ie .two-thirds .column-row {
   width: 1240px; }
 
+/* line 3, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/buttons */
 .btn--25, .btn--info {
   font-size: 1.5625em;
   letter-spacing: 1px; }
 
+/* line 8, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/buttons */
 .btn--white {
   color: #fff; }
 
+/* line 12, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/buttons */
 .btn--no-ap {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -474,9 +549,11 @@ body.ie .two-thirds .column-row {
   padding: 0px;
   margin: 0px; }
 
+/* line 20, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/buttons */
 .btn--fill {
   position: relative;
   padding-bottom: 0.9375em; }
+  /* line 24, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/buttons */
   .btn--fill:after {
     position: absolute;
     top: auto;
@@ -488,11 +565,14 @@ body.ie .two-thirds .column-row {
     content: '';
     background: #fff;
     height: 5px; }
+  /* line 32, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/buttons */
   .btn--fill:hover {
     color: #fff; }
+    /* line 35, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/buttons */
     .btn--fill:hover:after {
       right: 0%; }
 
+/* line 41, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/buttons */
 .btn--info {
   color: #fff; }
 
@@ -520,41 +600,52 @@ body.ie .two-thirds .column-row {
   /* Legacy iOS */
   font-weight: 300; }
 
+/* line 34, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
 .ft-bold {
   font-family: 'font', sans-serif;
   font-weight: 500; }
 
+/* line 39, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
 .ft-reg {
   font-family: 'font', sans-serif;
   font-weight: 300; }
 
+/* line 44, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
 .ft-alt-reg {
   font-family: 'alt-regular', sans-serif;
   font-weight: 300; }
 
+/* line 49, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
 .heading-1 {
   font-size: 2.1875em;
   line-height: 1.09375em; }
+  /* line 53, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
   .heading-1 span {
     font-size: 1.28571em;
     line-height: 0.5em; }
 
+/* line 59, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
 .heading-2 {
   font-size: 1.875em;
   line-height: 0.9375em; }
 
+/* line 64, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
 .teasing-1 {
   font-size: 1.4375em; }
+  /* line 67, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
   .teasing-1 span {
     font-size: 1.04348em; }
 
+/* line 72, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
 .teasing-2 {
   font-size: 1.25em;
   line-height: 0.625em;
   letter-spacing: 0.0625em; }
 
+/* line 81, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
 .lnk--anim {
   position: relative; }
+  /* line 84, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
   .lnk--anim:after {
     position: absolute;
     top: auto;
@@ -566,23 +657,30 @@ body.ie .two-thirds .column-row {
     background: #fff;
     content: '';
     height: 1px; }
+  /* line 92, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
   .lnk--anim:hover {
     color: #fff; }
+    /* line 95, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/typography */
     .lnk--anim:hover:after {
       right: 0%; }
 
+/* line 1, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/utils */
 .lower {
   text-transform: lowercase; }
 
+/* line 5, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/utils */
 .white {
   color: #fff; }
 
+/* line 9, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/utils */
 .soft-grey {
   color: #6c7884; }
 
+/* line 13, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/utils */
 .align-center {
   text-align: center; }
 
+/* line 1, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/others */
 #stage {
   position: absolute;
   top: 0px;
@@ -590,30 +688,36 @@ body.ie .two-thirds .column-row {
   bottom: 0px;
   left: 0px; }
 
+/* line 1, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/icons */
 .icon {
   display: block; }
 
+/* line 5, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/utils/ui/icons */
 .icon-close {
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMjg0LjcsMjU2IDQ1Ny42LDQyOSA0MjkuMSw0NTcuNiAyNTYsMjg0LjUgODIuOSw0NTcuNiA1NC40LDQyOSAyMjcuMywyNTYgNTQuNCw4MyA4Mi45LDU0LjQgCgkyNTYsMjI3LjUgNDI5LjEsNTQuNCA0NTcuNiw4MyAiLz4KPC9zdmc+) no-repeat;
   width: 12px;
   height: 12px; }
 
+/* line 1, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
 html, body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased; }
 
+/* line 8, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
 body {
   background-image: -webkit-radial-gradient(center,  ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 100%), url('../assets/images/pattern.png');
   background-image: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 100%), url('../assets/images/pattern.png');
   background-image: radial-gradient( ellipse  at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 100%), url('../assets/images/pattern.png');
   position: relative; }
+  /* line 19, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
   body:after {
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: auto; }
+  /* line 24, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
   body:after, body:before {
     content: '';
     width: 8px;
@@ -628,6 +732,7 @@ body {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#000b0e15',GradientType=0 );
     /* IE6-9 */ }
+  /* line 37, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
   body:before {
     position: absolute;
     top: 0px;
@@ -635,8 +740,10 @@ body {
     bottom: 0px;
     left: 0px; }
 
+/* line 42, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
 html {
   overflow: hidden; }
+  /* line 45, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
   html:before {
     content: '';
     height: 8px;
@@ -647,25 +754,31 @@ html {
     left: 8px;
     background: rgba(255, 255, 255, 0.2); }
 
+/* line 55, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
 [v-cloak] {
   display: none; }
 
+/* line 63, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
 .content-wrapper, .home, .projects-list, .project, .about {
   height: 100%; }
 
+/* line 67, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
 input[type=text]:focus, textarea:focus {
   box-shadow: none;
   border: none;
   outline: none; }
 
+/* line 73, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
 a {
   color: #444;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out; }
+  /* line 77, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
   a:hover {
     color: #007dac; }
 
+/* line 82, /Users/sreucherand/Sites/sandbox/crma15-workshop-showcase/sass/base/base */
 ul, li {
   list-style-type: none;
   margin: 0;
@@ -674,6 +787,7 @@ ul, li {
 /*
     Sections and components styles
  */
+/* line 1, src/views/sections/home/home */
 .home {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -685,12 +799,15 @@ ul, li {
       -ms-flex-pack: center;
           justify-content: center; }
 
+/* line 7, src/views/sections/home/home */
 .home__heading {
   margin-bottom: 30px; }
 
+/* line 11, src/views/sections/home/home */
 .home__teasing {
   margin-bottom: 65px; }
 
+/* line 1, src/views/sections/project/project */
 .project {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -702,16 +819,19 @@ ul, li {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px; }
+  /* line 7, src/views/sections/project/project */
   .project iframe {
     display: flex-box;
     width: 100%;
     height: 100%; }
 
+/* line 14, src/views/sections/project/project */
 .project__close {
   position: absolute;
   top: 20px;
   right: 20px; }
 
+/* line 1, src/views/sections/projects-list/projects-list */
 .projects-list {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -723,12 +843,15 @@ ul, li {
       -ms-flex-pack: center;
           justify-content: center; }
 
+/* line 7, src/views/sections/projects-list/projects-list */
 .projects-list__heading {
   margin-bottom: 1.5625em; }
 
+/* line 11, src/views/sections/projects-list/projects-list */
 .projects-list__teasing {
   margin-bottom: 1.0625em; }
 
+/* line 1, src/views/sections/about/about */
 .about {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -741,6 +864,7 @@ ul, li {
           justify-content: center;
   padding: 40px; }
 
+/* line 8, src/views/sections/about/about */
 .about__wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -755,17 +879,21 @@ ul, li {
   width: 100%;
   background: rgba(255, 255, 255, 0.01); }
 
+/* line 17, src/views/sections/about/about */
 .about__heading {
   margin-bottom: 2.5em; }
 
+/* line 21, src/views/sections/about/about */
 .about__infos {
   margin-top: 4.6875em; }
 
+/* line 25, src/views/sections/about/about */
 p {
   font-size: 1.25em;
   line-height: 1.4375em;
   margin-bottom: 0.1875em; }
 
+/* line 1, src/views/layout/footer/footer */
 footer {
   position: absolute;
   top: auto;
@@ -773,13 +901,16 @@ footer {
   bottom: 0px;
   left: 0px;
   height: 90px; }
+  /* line 6, src/views/layout/footer/footer */
   footer img {
     margin-bottom: 20px; }
+  /* line 10, src/views/layout/footer/footer */
   footer h2 {
     color: #555;
     font-size: 20px;
     margin-bottom: 40px;
     font-weight: 100; }
+  /* line 17, src/views/layout/footer/footer */
   footer .btn--info {
     position: absolute;
     top: auto;
@@ -787,15 +918,19 @@ footer {
     bottom: 20px;
     left: auto; }
 
+/* line 1, src/views/components/nameButton/nameButton */
 .name-button {
   display: block;
   position: relative;
   padding: 15px 0; }
+  /* line 13, src/views/components/nameButton/nameButton */
   .name-button .name, .name-button .title {
     display: block;
     pointer-events: none; }
+  /* line 19, src/views/components/nameButton/nameButton */
   .name-button .name {
     font-size: 1.4375em; }
+  /* line 25, src/views/components/nameButton/nameButton */
   .name-button .title {
     opacity: 0;
     font-size: 1.125em; }

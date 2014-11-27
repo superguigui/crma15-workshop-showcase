@@ -22,6 +22,9 @@ module.exports = extend(true, {}, section, {
             this.project = this.$root.$data.projects.filter(function(value){
                 return value.id === this.$options.route.params.id;
             }, this)[0];
+        },
+        onTransitionInComplete: function () {
+            this.$root.$emit('cloud:needbreak');
         }
     },
 
@@ -29,5 +32,6 @@ module.exports = extend(true, {}, section, {
     },
 
     beforeDestroy: function() {
+        this.$root.$emit('cloud:needbeat');
     }
 });

@@ -32,6 +32,15 @@ function init() {
         data: {
             currentPage: null, // Current page id, used by v-pw-view
             context: {}, // reference to the router context
+            break: false,
+            animate: function () {
+                if (!this.break) {
+                    if (this.cloud) {
+                        this.cloud.render();
+                    }
+                }
+                window.requestAnimationFrame(this.animate.bind(this));
+            },
             projects: [
                 {
                     id: 'clement-bardon',
@@ -163,6 +172,21 @@ function init() {
         },
 
         ready: function() {
+            console.log(this);
+            this.cloud = new Cloud('stage');
+            
+            this.cloud.register('gobelins', 'assets/images/gobelins.png');
+            this.cloud.start('gobelins');
+            
+            this.animate();
+            
+            this.$on('cloud:needbreak', function () {
+                this.break = true;
+            }.bind(this));            
+            this.$on('cloud:needbeat', function () {
+                this.break = false;
+            }.bind(this));
+            
             router.on('router:update', this.onRouteUpdate.bind(this));
 
             router.addRoute(require('./views/sections/home/home').route);
@@ -170,8 +194,11 @@ function init() {
             router.addRoute(require('./views/sections/projects-list/projects-list').route);
             router.addRoute(require('./views/sections/about/about').route);
             router.setDefaultRoute('home');
+            
+            window.addEventListener('resize', function () {
+                this.cloud.resize(window.innerWidth, window.innerHeight);
+            }.bind(this));
         },
-
         methods: {
             onRouteUpdate: function(context) {
                 this.context = context;
@@ -180,24 +207,6 @@ function init() {
             }
         }
     });
-
-    var cloud = new Cloud('stage');
-
-    cloud.register('gobelins', 'assets/images/gobelins.png');
-    cloud.start('gobelins');
-
-    var animate = function () {
-        // Stop loop here plz
-        window.requestAnimationFrame(animate);
-
-        cloud.render();
-    }
-
-    window.addEventListener('resize', function () {
-        cloud.resize(window.innerWidth, window.innerHeight);
-    });
-
-    animate();
 }
 
 window.onload = init;
