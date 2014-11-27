@@ -61,7 +61,7 @@
     "gulp-plumber": "*",
     "gulp-sass": "*",
     "gulp-streamify": "0.0.5",
-    "gulp-uglify": "*",
+    "gulp-uglify": "^1.0.1",
     "gulp-util": "^3.0.0",
     "html-browserify": "*",
     "jshint-stylish": "*",
