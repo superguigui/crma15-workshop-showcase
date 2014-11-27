@@ -30,7 +30,6 @@ function init() {
     var app = new Vue({
         el: 'body',
         data: {
-            stopAnimation: false,
             currentPage: null, // Current page id, used by v-pw-view
             context: {}, // reference to the router context
             projects: [
@@ -183,16 +182,13 @@ function init() {
     });
 
     var cloud = new Cloud('stage');
-    console.log(cloud);
 
     cloud.register('gobelins', 'assets/images/gobelins.png');
     cloud.start('gobelins');
 
     var animate = function () {
-        // console.log(app.$data.stopAnimation);
-        if(!app.$data.stopAnimation) {
-            window.requestAnimationFrame(animate);
-        }
+        // Stop loop here plz
+        window.requestAnimationFrame(animate);
 
         cloud.render();
     }

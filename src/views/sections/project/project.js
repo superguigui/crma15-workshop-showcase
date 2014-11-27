@@ -26,11 +26,8 @@ module.exports = extend(true, {}, section, {
     },
 
     ready: function() {
-        this.$root.$data.stopAnimation = true;
     },
 
     beforeDestroy: function() {
-        this.$root.$data.stopAnimation = false;
-        console.log(window);
     }
 });
