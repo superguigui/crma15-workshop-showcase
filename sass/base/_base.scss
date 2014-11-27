@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     @extend %full-size;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -58,7 +59,8 @@ html {
 .content-wrapper,
 .home,
 .projects-list,
-.project {
+.project,
+.about {
     height: 100%;
 }
 

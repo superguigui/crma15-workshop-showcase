@@ -1,3 +1,51 @@
+// Font faces
+@font-face {
+	font-family: 'font';
+	src: url('/assets/fonts/regular.eot'); /* IE9 Compat Modes */
+	src: url('/assets/fonts/regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	   url('/assets/fonts/regular.woff') format('woff'), /* Modern Browsers */
+	   url('/assets/fonts/regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+	   url('/assets/fonts/regular.svg#regular') format('svg'); /* Legacy iOS */
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'font';
+	src: url('/assets/fonts/bold.eot'); /* IE9 Compat Modes */
+	src: url('/assets/fonts/bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	   url('/assets/fonts/bold.woff') format('woff'), /* Modern Browsers */
+	   url('/assets/fonts/bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+	   url('/assets/fonts/bold.svg#bold') format('svg'); /* Legacy iOS */
+	font-weight:500;
+}
+
+@font-face {
+	font-family: 'alt-regular';
+	src: url('/assets/fonts/alt-reg.eot'); /* IE9 Compat Modes */
+	src: url('/assets/fonts/alt-reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	   url('/assets/fonts/alt-reg.woff') format('woff'), /* Modern Browsers */
+	   url('/assets/fonts/alt-reg.ttf')  format('truetype'), /* Safari, Android, iOS */
+	   url('/assets/fonts/alt-reg.svg#alt-reg') format('svg'); /* Legacy iOS */
+	font-weight:300;
+}
+
+// End font faces
+
+.ft-bold {
+	font-family: 'font', sans-serif;
+	font-weight: 500;
+}
+
+.ft-reg {
+	font-family: 'font', sans-serif;
+	font-weight: 300;
+}
+
+.ft-alt-reg {
+	font-family: 'alt-regular', sans-serif;
+	font-weight: 300;
+}
+
 .heading-1 {
 	font-size: em(35);
 	line-height: em(35/2);
@@ -25,4 +73,27 @@
 	font-size: em(20);
 	line-height: em(20/2);
 	letter-spacing: em(1);
+}
+
+.lnk {
+}
+
+.lnk--anim {
+	@include position();
+
+	&:after {
+		@include position(absolute, auto 100% -3px 0px);
+		@include transition(right 0.5s);
+		background: $white;
+		content: '';
+		height: 1px;
+	}
+
+	&:hover {
+		color: $white;
+
+		&:after {
+			right: 0%;
+		}
+	}
 }

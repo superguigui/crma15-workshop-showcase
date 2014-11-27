@@ -1,0 +1,29 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.about__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba($white, 0.01);
+}
+
+.about__heading {
+    margin-bottom: em(40);
+}
+
+.about__infos {
+    margin-top: em(75);
+}
+
+p {
+    font-size: em(20);
+    line-height: em(23);
+    margin-bottom: em(3);
+}

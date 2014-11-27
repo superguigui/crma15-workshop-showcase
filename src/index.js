@@ -30,6 +30,7 @@ function init() {
     var app = new Vue({
         el: 'body',
         data: {
+            stopAnimation: false,
             currentPage: null, // Current page id, used by v-pw-view
             context: {}, // reference to the router context
             projects: [
@@ -147,7 +148,8 @@ function init() {
             /* PAGES */
             'home': require('./views/sections/home/home'),
             'project': require('./views/sections/project/project'),
-            'projects-list': require('./views/sections/projects-list/projects-list')
+            'projects-list': require('./views/sections/projects-list/projects-list'),
+            'about': require('./views/sections/about/about')
 
             /* COMMON */
 
@@ -167,6 +169,7 @@ function init() {
             router.addRoute(require('./views/sections/home/home').route);
             router.addRoute(require('./views/sections/project/project').route);
             router.addRoute(require('./views/sections/projects-list/projects-list').route);
+            router.addRoute(require('./views/sections/about/about').route);
             router.setDefaultRoute('home');
         },
 
@@ -180,12 +183,16 @@ function init() {
     });
 
     var cloud = new Cloud('stage');
+    console.log(cloud);
 
     cloud.register('gobelins', 'assets/images/gobelins.png');
     cloud.start('gobelins');
 
     var animate = function () {
-        window.requestAnimationFrame(animate);
+        // console.log(app.$data.stopAnimation);
+        if(!app.$data.stopAnimation) {
+            window.requestAnimationFrame(animate);
+        }
 
         cloud.render();
     }

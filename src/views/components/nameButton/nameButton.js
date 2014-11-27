@@ -8,12 +8,10 @@ module.exports = {
     template: require('./nameButton.html'),
     methods: {
         onMouseOver: function(e) {
-            console.log('onMouseOver');
             TweenMax.to(this.$$.name, 0.6, {y: 0, ease: Expo.easeOut});
             TweenMax.to(this.$$.title, 0.6, {alpha: 1, y: 0, ease: Expo.easeOut});
         },
         onMouseOut: function(e) {
-            console.log('onMouseOut');
             TweenMax.to(this.$$.name, 0.6, {y: this.$$.title.offsetHeight * 0.5, ease: Expo.easeOut});
             TweenMax.to(this.$$.title, 0.6, {alpha: 0, y: -this.$$.title.offsetHeight * 0.5, ease: Expo.easeOut });
         },
