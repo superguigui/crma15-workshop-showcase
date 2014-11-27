@@ -25,6 +25,9 @@ module.exports = extend(true, {}, section, {
         },
         afterTransitionIn: function() {
             this.$root.$emit('cloud:needbreak');
+        },
+        beforeTransitionOut: function() {
+            this.$root.$emit('cloud:needbeat');
         }
     },
 
@@ -32,6 +35,5 @@ module.exports = extend(true, {}, section, {
     },
 
     beforeDestroy: function() {
-        this.$root.$emit('cloud:needbeat');
     }
 });

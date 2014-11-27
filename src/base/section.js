@@ -43,11 +43,16 @@ module.exports = {
             // Whatever.
         },
 
+        beforeTransitionOut: function() {
+            // Whatever.
+        },
+
         /*
             Starts the transitionOut, override it if you need to play something else than the default Timeline depending on next route.
         */
         playTransitionOut: function(nextRoute) {
             this.tlTransition.reverse();
+            this.beforeTransitionOut();
         },
 
         /*

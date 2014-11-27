@@ -17,7 +17,8 @@ module.exports = (function () {
         this.renderer = new Proton.Renderer('canvas', this.proton, this.canvas);
 
         document.getElementById(id).appendChild(this.canvas);
-
+        
+        this.dump = true;
         this.clock = 0;
         this.frame = {width: window.innerWidth, height: window.innerHeight};
         this.offset = {width: 0, height: 0};
@@ -166,13 +167,23 @@ module.exports = (function () {
     };
 
     Cloud.prototype.render = function () {
-        this.proton.update();
+        if (this.dump) {
+            this.proton.update();
 
-        this.clock += this.proton.elapsed;
+            this.clock += this.proton.elapsed;
 
-        if (this.notif && this.pr === this.emitter.particles.length - 1) {
-            this.notif = false;
+            if (this.notif && this.pr === this.emitter.particles.length - 1) {
+                this.notif = false;
+            }
         }
+    };
+    
+    Cloud.prototype.pause = function () {
+        this.dump = false;
+    };
+    
+    Cloud.prototype.resume = function () {
+        this.dump = true;
     };
 
     Cloud.prototype.resize = function (width, height)  {

@@ -32,115 +32,136 @@ function init() {
         data: {
             currentPage: null, // Current page id, used by v-pw-view
             context: {}, // reference to the router context
-            break: false,
+            timerIn: null,
+            timerOut: null,
+            shaper: false,
             animate: function () {
-                if (!this.break) {
-                    if (this.cloud) {
-                        this.cloud.render();
-                    }
+                if (this.cloud) {
+                    this.cloud.render();
                 }
+                
                 window.requestAnimationFrame(this.animate.bind(this));
             },
             projects: [
                 {
                     id: 'clement-bardon',
                     author: 'Clément Bardon',
-                    title: 'Blow!'
+                    title: 'Blow!',
+                    shape: 'clement-bardon'
                 },
                 {
                     id: 'nicolas-bonnot',
                     author: 'Nicolas Bonnot',
-                    title: 'Pixel Vinyl'
+                    title: 'Pixel Vinyl',
+                    shape: 'nicolas-bonnot'
                 },
                 {
                     id: 'kevin-budain',
                     author: 'Kevin Budain',
-                    title: 'Planets'
+                    title: 'Planets',
+                    shape: 'null'
                 },
                 {
                     id: 'bertrand-cayla',
                     author: 'Bertrand Cayla',
-                    title: 'Aqua'
+                    title: 'Aqua',
+                    shape: 'null'
                 },
                 {
                     id: 'etienne-chaumont',
                     author: 'Etienne Chaumont',
-                    title: 'Days'
+                    title: 'Days',
+                    shape: 'etienne-chaumont'
                 },
                 {
                     id: 'jordan-delcros',
                     author: 'Jordan Delcros',
-                    title: 'Grenade'
+                    title: 'Grenade',
+                    shape: 'null'
                 },
                 {
                     id: 'jeremie-devoos',
                     author: 'Jérémie Devoos',
-                    title: 'Pyramids are not Triangles'
+                    title: 'Pyramids are not',
+                    shape: 'triangle'
                 },
                 {
                     id: 'leonard-hetsch',
                     author: 'Léonard Hetsch',
-                    title: 'Balloon'
+                    title: 'Balloon',
+                    shape: 'null'
                 },
                 {
                     id: 'samuel-honigstein',
                     author: 'Samuel Honigstein',
-                    title: 'Kinectic Surface'
+                    title: 'Kinectic Surface',
+                    shape: 'null'
                 },
                 {
                     id: 'lory-huz',
                     author: 'Lory Huz',
-                    title: 'Shape Fighter'
+                    title: 'Shape Fight',
+                    shape: 'round'
                 },
                 {
                     id: 'guillaume-jasmin',
                     author: 'Guillaume Jasmin',
-                    title: 'Bob'
+                    title: 'Bob',
+                    shape: 'guillaume-jasmin'
                 },
                 {
                     id: 'thomas-josseau',
                     author: 'Thomas Josseau',
-                    title: 'Flatland'
+                    title: 'Flatland',
+                    shape: 'thomas-josseau'
                 },
                 {
                     id: 'antonin-langlade',
                     author: 'Antonin Langlade',
-                    title: 'Words'
+                    title: 'Words',
+                    shape: 'antonin-langlade'
                 },
                 {
                     id: 'katia-moreira',
                     author: 'Katia Moreira',
-                    title: '3D is better'
+                    title: '3D is better',
+                    shape: 'null'
                 },
                 {
                     id: 'louise-obe',
                     author: 'Louise Obé',
-                    title: 'Morphing pool'
+                    title: 'Morphing pool',
+                    shape: 'null'
                 },
                 {
                     id: 'jean-baptiste-penrath',
                     author: 'Jean-Baptiste Penrath',
-                    title: 'Circles'
+                    title: 'Circles',
+                    shape: 'circle'
                 },
                 {
                     id: 'sylvain-reucherand',
                     author: 'Sylvain Reucherand',
-                    title: 'Euler'
+                    title: 'Euler',
+                    shape: 'triangle'
                 },
                 {
                     id: 'glenn-sonna',
                     author: 'Glenn Sonna',
-                    title: 'Dancelines'
+                    title: 'Dancelines',
+                    shape: 'null'
                 },
                 {
                     id: 'alexis-tessier',
                     author: 'Alexis Tessier',
-                    title: 'Lunar'
+                    title: 'Lunar',
+                    shape: 'null'
                 },
                 {
                     id: 'geoffrey-thenot',
                     author: 'Geoffrey Thenot',
-                    title: 'Birds'
+                    title: 'Birds',
+                    shape: 'null'
                 }
             ]
         },
@@ -172,19 +193,59 @@ function init() {
         },
 
         ready: function() {
-            console.log(this);
             this.cloud = new Cloud('stage');
             
             this.cloud.register('gobelins', 'assets/images/gobelins.png');
+            this.cloud.register('circle', 'assets/images/shapes/circle.png');
+            this.cloud.register('triangle', 'assets/images/shapes/triangle.png');
+            this.cloud.register('round', 'assets/images/shapes/round.png');
+            this.cloud.register('antonin-langlade', 'assets/images/shapes/antonin-langlade.png');
+            this.cloud.register('etienne-chaumont', 'assets/images/shapes/etienne-chaumont.png');
+            this.cloud.register('nicolas-bonnot', 'assets/images/shapes/nicolas-bonnot.png');
+            this.cloud.register('thomas-josseau', 'assets/images/shapes/thomas-josseau.png');
+            this.cloud.register('clement-bardon', 'assets/images/shapes/clement-bardon.png');
+            this.cloud.register('guillaume-jasmin', 'assets/images/shapes/guillaume-jasmin.png');
             this.cloud.start('gobelins');
             
             this.animate();
             
             this.$on('cloud:needbreak', function () {
-                this.break = true;
-            }.bind(this));            
+                this.cloud.pause();
+            }.bind(this));        
             this.$on('cloud:needbeat', function () {
-                this.break = false;
+                this.cloud.resume();
+            }.bind(this));           
+            this.$on('cloud:needupdate', function (shape) {
+                if (this.timerIn) {
+                    return;
+                }
+                
+                clearTimeout(this.timerOut);
+                this.timerOut = null;
+
+                this.timerIn = setTimeout(function () {
+                    if (shape == 'null') {
+                        this.cloud.organize('gobelins');
+                    } else {
+                        this.cloud.organize(shape);
+                    }
+                    this.shaped = true;
+                }.bind(this), 600);
+            }.bind(this));         
+            this.$on('cloud:needreset', function (shape) {
+                if (!this.timerIn) {
+                    return;
+                }
+                
+                clearTimeout(this.timerIn);
+                this.timerIn = null;
+
+                if (this.shaped) {
+                    this.timerOut = setTimeout(function () {
+                        this.cloud.organize('gobelins');
+                        this.shaped = false;
+                    }.bind(this), 1600);
+                }
             }.bind(this));
             
             router.on('router:update', this.onRouteUpdate.bind(this));
