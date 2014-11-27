@@ -39,6 +39,10 @@ module.exports = {
             this.tlTransition.play();
         },
 
+        afterTransitionIn: function() {
+            // Whatever.
+        },
+
         /*
             Starts the transitionOut, override it if you need to play something else than the default Timeline depending on next route.
         */
@@ -70,6 +74,7 @@ module.exports = {
             this.playTransitionIn(previousRoute);
         },
         onTransitionInComplete: function() {
+            this.afterTransitionIn();
             this.$emit('section:transitionInComplete');
         },
         transitionOut: function(nextRoute) {

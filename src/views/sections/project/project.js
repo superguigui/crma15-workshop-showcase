@@ -23,7 +23,7 @@ module.exports = extend(true, {}, section, {
                 return value.id === this.$options.route.params.id;
             }, this)[0];
         },
-        onTransitionInComplete: function () {
+        afterTransitionIn: function() {
             this.$root.$emit('cloud:needbreak');
         }
     },
