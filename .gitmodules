@@ -55,3 +55,6 @@
 [submodule "repos/bertrand-cayla"]
 	path = repos/bertrand-cayla
 	url = https://github.com/Vandell/ThreeJS-Experiment.git
+[submodule "repos/samuel-honigstein"]
+	path = repos/samuel-honigstein
+	url = https://github.com/Samsy/ThreeJSPortfo
