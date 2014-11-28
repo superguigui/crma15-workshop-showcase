@@ -40,9 +40,6 @@
 [submodule "repos/guillaume-jasmin"]
 	path = repos/guillaume-jasmin
 	url = https://github.com/gjasmin/ThreejsExperiment
-[submodule "repos/samuel-honingstein"]
-	path = repos/samuel-honingstein
-	url = https://github.com/Samsy/ThreeJSPortfo
 [submodule "repos/thomas-josseau"]
 	path = repos/thomas-josseau
 	url = https://github.com/tjosseau/flatland-demoscene
