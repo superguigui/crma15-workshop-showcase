@@ -59,13 +59,13 @@ function init() {
                     id: 'kevin-budain',
                     author: 'Kevin Budain',
                     title: 'Planets',
-                    shape: 'null'
+                    shape: 'kevin-budain'
                 },
                 {
                     id: 'bertrand-cayla',
                     author: 'Bertrand Cayla',
                     title: 'Aqua',
-                    shape: 'null'
+                    shape: 'bertrand-cayla'
                 },
                 {
                     id: 'etienne-chaumont',
@@ -77,30 +77,30 @@ function init() {
                     id: 'jordan-delcros',
                     author: 'Jordan Delcros',
                     title: 'Grenade',
-                    shape: 'null'
+                    shape: 'jordan-delcros'
                 },
                 {
                     id: 'jeremie-devoos',
                     author: 'Jérémie Devoos',
-                    title: 'Pyramids are not',
+                    title: 'Pyramids are not triangles',
                     shape: 'triangle'
                 },
                 {
                     id: 'leonard-hetsch',
                     author: 'Léonard Hetsch',
                     title: 'Balloon',
-                    shape: 'null'
+                    shape: 'round'
                 },
                 {
                     id: 'samuel-honigstein',
                     author: 'Samuel Honigstein',
                     title: 'Kinectic Surface',
-                    shape: 'null'
+                    shape: 'samuel-honigstein'
                 },
                 {
                     id: 'lory-huz',
                     author: 'Lory Huz',
-                    title: 'Shape Fight',
+                    title: 'Shape Fighter',
                     shape: 'round'
                 },
                 {
@@ -125,13 +125,13 @@ function init() {
                     id: 'katia-moreira',
                     author: 'Katia Moreira',
                     title: '3D is better',
-                    shape: 'null'
+                    shape: 'square'
                 },
                 {
                     id: 'louise-obe',
                     author: 'Louise Obé',
                     title: 'Morphing pool',
-                    shape: 'null'
+                    shape: 'louise-obe'
                 },
                 {
                     id: 'jean-baptiste-penrath',
@@ -149,19 +149,19 @@ function init() {
                     id: 'glenn-sonna',
                     author: 'Glenn Sonna',
                     title: 'Dancelines',
-                    shape: 'null'
+                    shape: 'glenn-sonna'
                 },
                 {
                     id: 'alexis-tessier',
                     author: 'Alexis Tessier',
                     title: 'Lunar',
-                    shape: 'null'
+                    shape: 'alexis-tessier'
                 },
                 {
                     id: 'geoffrey-thenot',
                     author: 'Geoffrey Thenot',
                     title: 'Birds',
-                    shape: 'null'
+                    shape: 'geoffrey-thenot'
                 }
             ]
         },
@@ -199,12 +199,21 @@ function init() {
             this.cloud.register('circle', 'assets/images/shapes/circle.png');
             this.cloud.register('triangle', 'assets/images/shapes/triangle.png');
             this.cloud.register('round', 'assets/images/shapes/round.png');
+            this.cloud.register('square', 'assets/images/shapes/square.png');
             this.cloud.register('antonin-langlade', 'assets/images/shapes/antonin-langlade.png');
             this.cloud.register('etienne-chaumont', 'assets/images/shapes/etienne-chaumont.png');
             this.cloud.register('nicolas-bonnot', 'assets/images/shapes/nicolas-bonnot.png');
             this.cloud.register('thomas-josseau', 'assets/images/shapes/thomas-josseau.png');
             this.cloud.register('clement-bardon', 'assets/images/shapes/clement-bardon.png');
+            this.cloud.register('louise-obe', 'assets/images/shapes/louise-obe.png');
             this.cloud.register('guillaume-jasmin', 'assets/images/shapes/guillaume-jasmin.png');
+            this.cloud.register('glenn-sonna', 'assets/images/shapes/glenn-sonna.png');
+            this.cloud.register('kevin-budain', 'assets/images/shapes/kevin-budain.png');
+            this.cloud.register('bertrand-cayla', 'assets/images/shapes/bertrand-cayla.png');
+            this.cloud.register('alexis-tessier', 'assets/images/shapes/alexis-tessier.png');
+            this.cloud.register('samuel-honigstein', 'assets/images/shapes/samuel-honigstein.png');
+            this.cloud.register('jordan-delcros', 'assets/images/shapes/jordan-delcros.png');
+            this.cloud.register('geoffrey-thenot', 'assets/images/shapes/geoffrey-thenot.png');
             this.cloud.start('gobelins');
             
             this.animate();
@@ -224,7 +233,7 @@ function init() {
                 this.timerOut = null;
 
                 this.timerIn = setTimeout(function () {
-                    if (shape == 'null') {
+                    if (shape == null) {
                         this.cloud.organize('gobelins');
                     } else {
                         this.cloud.organize(shape);
