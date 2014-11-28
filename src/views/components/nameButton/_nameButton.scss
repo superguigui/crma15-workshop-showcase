@@ -10,6 +10,12 @@
         // cursor: pointer;
     }
 
+    &:visited {
+        .name {
+            @extend .soft-grey;
+        }
+    }
+
     .name, .title {
         display: block;
         pointer-events:none;
